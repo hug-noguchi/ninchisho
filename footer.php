@@ -40,7 +40,7 @@
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/info/">記事一覧</a>
 						</li>
 						<li>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/diagnostic_referral/">認知機能チェック</a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/diagnostic_referral/">認知機能診断</a>
 						</li>
 						<li>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact/">お問い合わせ</a>
