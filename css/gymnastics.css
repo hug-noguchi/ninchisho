@@ -6,397 +6,615 @@ img {
   max-width: 100%;
   height: auto;
 }
+.breadcrumbs {
+  margin: 8px auto 0;
+}
 section.kv_area {
   padding-top: 0;
 }
-article.page .kv_top img {
-  object-fit: contain;
+span.page_ttl {
+  top: 30%;
 }
-.gymnastics span.page_ttl {
-  color: #0c559e;
-  top: 16%;
-  left: 10%;
-  margin: unset;
-  line-height: 1.1;
-  text-align: left;
-}
-.gymnastics span.page_txt {
-  font-size: 24px;
-}
-.gymnastics span.page_lead {
+span.page_ttl.js_typing::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/gymnastics/kv_icon.png) no-repeat center center / contain;
+  width: 140px;
+  height: 140px;
   position: absolute;
-  top: 36%;
-  right: 17%;
-  font-size: 20px;
-  color: #0c559e;
-  letter-spacing: 1.7px;
-  line-height: 1.7;
+  top: -520%;
+  left: 46%;
 }
-.bell_luco {
-  width: 10%;
-  position: absolute;
-  bottom: -10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+section {
+  padding: 80px 0;
 }
-
-.lead_box {
-  display: block;
-  text-align: center;
+.sec_inner {
+  max-width: 1110px;
   margin: 0 auto;
 }
-.lead_detail {
-  display: inline-block;
-  text-align: left;
-}
-.lead_ttl {
-  font-size: 28px;
-  color: #e3a700;
+h2 {
+  font-size: 32px;
+  color: #de4186;
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 72px;
+  position: relative;
   line-height: 1.4;
 }
-.lead_txt {
+h2::after {
+  position: absolute;
+  content: "";
+  background-color: #de4186;
+  border-radius: 20px;
+  width: 72px;
+  height: 6px;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+p {
   font-size: 18px;
-  color: #0980b6;
+  line-height: 1.7;
+}
+.sec_title {
+  position: relative;
+}
+.why_prevention .why_prevention_lead {
   font-weight: 500;
+  margin-bottom: 48px;
 }
-.bellco {
-  margin-top: 80px;
+.why_prevention .why_prevention_box {
+  background-color: #fff;
+  border: 3px dotted #de4186;
+  border-radius: 20px;
+  padding: 40px 48px;
+  position: relative;
 }
-h2.bellco_ttl {
-  font-size: 30px;
-  color: #fff;
+.why_prevention .why_prevention_box_sublead {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+.why_prevention .why_prevention_sublead {
   font-weight: bold;
-  display: inline-block;
-  /* width: 26%; */
-  background-color: #d54900;
-  /* padding: 24px 2% 24px 11%; */
-  border-radius: 0 50px 50px 0;
-  width: 32%;
-  padding: 30px 4% 30px 13%;
 }
-.youtube {
-  max-width: 1150px;
-  width: 64%;
-  padding-top: 80px;
-  padding-bottom: 80px;
+.why_prevention .why_prevention_image {
+  position: absolute;
+  width: 13%;
+  right: 6%;
+  top: -64%;
+}
+.why_prevention .youtube {
+  max-width: 940px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 1;
 }
-video {
-  width: 100%;
+.why_prevention .youtube:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
 }
-.supervisor {
-  text-align: center;
-  max-width: 1150px;
-  width: 64%;
+.why_prevention .youtube img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: clamp(60px, 10vw, 100px);
+  height: auto;
+  pointer-events: none;
+  height: auto;
+}
+.why_prevention .youtube video {
+  /* width: 100%; */
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+@media (hover: hover) {
+  .why_prevention .youtube:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+}
+
+.movement {
+  background-color: #fcf0f5;
+}
+.movement_title_image {
+  width: 16%;
+  position: absolute;
+  top: -40%;
+  left: 6%;
+}
+.movement h2 {
+  margin-bottom: 98px;
+}
+.movement_list .movement_item {
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 1px 1px 7px #ccc;
-  padding: 2% 3%;
-  margin: 0 auto;
+  border: 3px dotted #de4186;
+  border-radius: 20px;
+  padding: 85px 80px 48px;
   position: relative;
 }
-.supervisor .supervisor_ttl {
-  width: 47%;
-  position: absolute;
-  top: 1%;
-  left: -2.5%;
+.movement_list .movement_item:not(:last-child) {
+  margin-bottom: 87px;
 }
-.supervisor_box {
+.movement_list .movement_item:last-child {
+  margin-bottom: 64px;
+}
+.movement_list .movement_item .movement_list_title {
+  background: #cf4c7b;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  border-radius: 10px;
+  padding: 12px 82px;
+  position: absolute;
+  top: 0;
+  left: 28%;
+  transform: translateY(-50%);
+}
+.movement_list .movement_item .movement_list_title p {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.4;
+}
+.movement_list .movement_item .movement_list_title p span {
+  font-size: 46px;
+  font-weight: bold;
+  color: #cf4c7b;
+  text-align: center;
+  background: #fff;
+  border: 4px solid #cf4c7b;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
+  left: -48px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90px;
+  height: 90px;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  line-height: 1;
+  text-align: center;
+  --shift-x: 2px;
+  --shift-y: 3px;
+  padding-right: calc(2 * var(--shift-x));
+  padding-bottom: calc(2 * var(--shift-y));
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+.movement_list .movement_item .movement_image {
   display: flex;
   justify-content: space-between;
-  padding-top: 10%;
+  margin-bottom: 40px;
 }
-.supervisor_box img {
-  width: 26%;
+.movement_list .movement_item .movement_image img {
+  width: 49%;
 }
-.supervisor_detail {
-  width: 70%;
-  text-align: left;
-}
-.supervisor_detail .supervisor_name {
-  font-size: 24px;
-  color: #0980b6;
-  font-weight: bold;
-  border-bottom: 2px solid #0980b6;
-  padding-bottom: 14px;
-}
-.supervisor_detail .supervisor_txt {
-  font-size: 18px;
-  color: #666666;
-  font-weight: 500;
-  padding-top: 20px;
-}
-
-.btn_app {
-  width: 40%;
-  margin: 0 auto;
-}
-.btn_app_txt {
-  font-size: 14px;
+.movement_list_sublist li {
   text-align: center;
-  padding-bottom: 20px;
+  display: block;
 }
-.btn_app div {
-  display: flex;
-  justify-content: center;
+.movement_list_sublist li p {
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px dotted #de4186;
+  display: inline-block;
+  text-align: left;
+  width: 60%;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
 }
-.btn_app div a:first-child {
-  margin-right: 100px;
-}
-.btn_app div a:first-child img {
-  width: 335px;
-}
-.btn_app div a:last-child img {
-  width: 387px;
+.movement_list_sublist li span {
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #de4186;
+  border-radius: 50%;
+  padding: 3px 10px;
+  margin-right: 8px;
 }
 
-section.foot_bnr_area .l_br {
+.comment {
+  max-width: 1100px;
   margin: 0 auto;
-  float: unset;
 }
-section.foot_bnr_area .r_br {
-  display: none;
+.comment .comment_inner {
+  background-color: #fff;
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)), linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+  background-size: 56px 56px;
+  width: 100%;
+  background-repeat: repeat;
+  border-radius: 20px;
+  padding: 88px 72px 40px;
+  margin-left: auto;
+  position: relative;
 }
-section.foot_bnr_area .inn02.contact_area {
+.comment .comment_title {
+  max-width: 336px;
+  width: 100%;
+  position: absolute;
+  top: 16px;
+  left: -16px;
+}
+.comment .comment_txt {
+  font-weight: 500;
+}
+
+.gymnastics_everyday .gymnastics_everyday_image {
+  width: 11%;
+  position: absolute;
+  top: -40%;
+  left: 6%;
+}
+.gymnastics_everyday .gymnastics_everyday_lead {
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+.gymnastics_everyday .gymnastics_everyday_list li {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #de4186;
+  border-radius: 20px;
+  background-color: #fcf5f8;
+  padding: 64px;
+}
+.gymnastics_everyday .gymnastics_everyday_list li:not(:last-child) {
+  margin-bottom: 40px;
+}
+.gymnastics_everyday .gymnastics_everyday_list li .gymnastics_everyday_box {
+  font-weight: bold;
+  width: 43%;
+}
+.gymnastics_everyday .gymnastics_everyday_list li .gymnastics_everyday_subtitle {
+  font-size: 14px;
+  color: #de4186;
+  border-bottom: 3px dotted #de4186;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+  display: inline-block;
+  line-height: 1.4;
+}
+.gymnastics_everyday .gymnastics_everyday_list li .gymnastics_everyday_txt {
+  font-weight: 500;
+}
+.gymnastics_everyday .gymnastics_everyday_list li .gymnastics_everyday_title {
+  font-size: 28px;
+  color: #de4186;
+  margin-bottom: 24px;
+}
+.gymnastics_everyday .gymnastics_everyday_list li .gymnastics_everyday_item_image {
+  width: 50%;
+}
+
+.gymnastics_supervisor {
+  background-color: #fcf0f5;
+}
+.gymnastics_supervisor .sec_inner {
+  display: flex;
+  justify-content: flex-start;
+  gap: 44px;
+}
+.gymnastics_supervisor .gymnastics_supervisor_image {
+  width: 22%;
+}
+.gymnastics_supervisor .gymnastics_supervisor_box {
+  width: 78%;
+}
+.gymnastics_supervisor .gymnastics_supervisor_box h2 {
+  text-align: left;
+  margin-bottom: 40px;
+}
+.gymnastics_supervisor .gymnastics_supervisor_name {
+  font-size: 37px;
+  color: #707070;
+}
+.gymnastics_supervisor .gymnastics_supervisor_subtitle {
+  font-size: 26px;
+  color: #707070;
+}
+
+.gymnastics_supervisor .gymnastics_supervisor_box h2::after {
+  width: 100%;
+  height: 1px;
+  bottom: -16px;
+}
+.gymnastics_supervisor .gymnastics_supervisor_txt {
+  display: flex;
+  justify-content: flex-start;
+}
+.gymnastics_supervisor .gymnastics_supervisor_txt p {
+  font-size: 14px;
+}
+.gymnastics_supervisor .gymnastics_supervisor_career {
+  width: 36%;
+  margin-right: 88px;
+}
+.gymnastics_supervisor .gymnastics_supervisor_notes span {
+  position: relative;
+  padding-left: 1em;
+}
+.gymnastics_supervisor .gymnastics_supervisor_notes span::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #de4186;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.app_service .app_service_list > li {
+  border: 3px dotted #de4186;
+}
+
+.foot_bnr_area {
   display: none;
 }
 
-.gymnastics section.diagnosis_link .inn02 {
-  max-width: 1284px;
-  width: 70%;
-}
-
-@media only screen and (min-width: 1177px) {
-  .lead_box:before {
-    content: "";
-    display: inline-block;
-    max-width: 696px;
-    width: 26%;
-    height: 100%;
-    background-image: url(/wp-content/themes/ninchisho/img/gymnastics_l.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 20%;
-    left: -2%;
-  }
-  .lead_box:after {
-    content: "";
-    display: inline-block;
-    max-width: 611px;
-    width: 23%;
-    height: 100%;
-    background-image: url(/wp-content/themes/ninchisho/img/gymnastics_r.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 20%;
-    right: -2%;
-  }
-  .bellco:before {
-    content: "";
-    display: inline-block;
-    width: 24%;
-    min-height: 347px;
-    height: auto;
-    background-image: url(/wp-content/themes/ninchisho/img/round_l_02.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 52%;
-    left: -5%;
-  }
-  .bellco:after {
-    content: "";
-    display: inline-block;
-    max-width: 542px;
-    width: 30%;
-    height: 100%;
-    background-image: url(/wp-content/themes/ninchisho/img/round_r_02.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 24%;
-    right: -4%;
-  }
-}
-@media only screen and (max-width: 1700px) {
-  .gymnastics span.page_lead {
-    right: 13%;
-  }
-  .lead_box:before,
-  .lead_box:after {
-    width: 26%;
-  }
-  .bellco:after {
-    width: 34%;
-    right: -8%;
-  }
-  h2.bellco_ttl {
-    padding: 30px 4% 30px 11%;
-  }
-}
-@media only screen and (max-width: 1487px) {
-  .gymnastics span.page_lead {
-    right: 11%;
-  }
-  .lead_box:before,
-  .lead_box:after {
-    width: 30%;
-  }
-  .bellco:before {
-    width: 24%;
-    left: -8%;
-  }
-  h2.bellco_ttl {
-    font-size: 24px;
-    padding: 24px 2% 24px 14%;
-  }
-  .btn_app div {
-    max-width: 95%;
-    margin: 0 auto;
-  }
-  .btn_app {
-    width: 40%;
-    margin: 0 auto;
-  }
-  .btn_app div a:first-child {
-    margin-right: 60px;
-  }
-}
 @media only screen and (max-width: 1366px) {
-  .gymnastics span.page_lead {
-    font-size: 16px;
-    line-height: 1.4;
-  }
   .breadcrumbs {
     max-width: 95%;
   }
-  .lead_box:before,
-  .lead_box:after {
-    width: 35%;
+  span.page_ttl.js_typing::before {
+    width: 130px;
+    height: 130px;
+    top: -230%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
-  h2.bellco_ttl {
-    padding: 24px 2% 24px 10%;
+}
+@media only screen and (max-width: 1176px) {
+  span.page_ttl.js_typing::before {
+    width: 110px;
+    height: 110px;
   }
-  .gymnastics span.page_txt {
-    font-size: 20px;
-  }
-  .btn_app {
-    width: 60%;
+}
+@media only screen and (max-width: 1100px) {
+  .app_service .app_service_list > li {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 780px) {
+  article.page .kv_top {
+    max-width: 100%;
+  }
   article.page .kv_top img {
-    width: 100%;
-    object-fit: unset;
-    aspect-ratio: unset;
+    aspect-ratio: 2 / 1;
   }
-  .lead_ttl {
+  span.page_ttl.js_typing::before {
+    width: 90px;
+    height: 90px;
+    top: -160%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  h2 {
     font-size: 20px;
+    margin-bottom: 44px;
   }
-  .lead_txt {
+  h2::after {
+    width: 48px;
+    height: 4px;
+    bottom: -16px;
+  }
+  p {
     font-size: 14px;
   }
-  .gymnastics span.page_ttl {
-    font-size: 16px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    line-height: 1.4;
+  section {
+    padding: 40px 0;
   }
-  .gymnastics span.page_txt {
-    font-size: 14px;
+  .breadcrumbs span:first-of-type {
+    letter-spacing: -1px;
   }
-  .gymnastics span.page_lead {
-    font-size: 12px;
-    top: 42%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
+  .sec_inner {
+    padding: 0 20px;
   }
-  .bell_luco {
-    bottom: -18%;
-    width: 40%;
+  .why_prevention .why_prevention_lead {
+    margin-bottom: 100px;
+  }
+  .why_prevention .why_prevention_box {
+    padding: 32px 24px;
+  }
+  .why_prevention .why_prevention_box_sublead {
+    margin-bottom: 32px;
+  }
+  .why_prevention .why_prevention_sublead {
+    letter-spacing: -0.8px;
+  }
+  .why_prevention .why_prevention_image {
+    width: 33%;
+    top: -64%;
+    right: unset;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
 
-  .bellco {
-    margin-top: 0;
+  .movement_title_image {
+    width: 30%;
+    top: 260%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
-  h2.bellco_ttl {
+  .movement h2 {
+    margin-bottom: 182px;
+  }
+  .movement_list .movement_item {
+    padding: 54px 24px 30px;
+    margin-bottom: 54px;
+  }
+  .movement_list .movement_item:not(:last-child) {
+    margin-bottom: 54px;
+  }
+  .movement_list .movement_item:last-child {
+    margin-bottom: 24px;
+  }
+  .movement_list .movement_item .movement_list_title {
+    width: 80%;
+    padding: 8px 0;
+    margin: 0 auto;
+    left: 13%;
+  }
+  .movement_list .movement_item .movement_list_title p {
     font-size: 20px;
-    font-weight: bold;
-    width: 70%;
-    padding: 12px 1% 12px 14%;
   }
-  .youtube {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    max-width: 95%;
+  .movement_list .movement_item .movement_list_title p span {
+    font-size: 29px;
+    left: -28px;
+    width: 60px;
+    height: 60px;
+    --shift-x: 1px;
+    --shift-y: 2px;
+  }
+  .movement_list .movement_item .movement_image {
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 8px;
+  }
+  .movement_list .movement_item .movement_image img {
     width: 100%;
   }
-  .supervisor {
+  .movement_list_sublist li p {
+    font-size: 14px;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .movement_list_sublist li span {
+    padding: 1px 10px;
+  }
+
+  .comment {
+    margin: 0 20px;
+  }
+  .comment .comment_inner {
+    width: 98%;
+    padding: 77px 20px 20px;
+  }
+  .comment .comment_title {
     width: 90%;
-    padding: 28px 20px 20px;
-  }
-  .supervisor .supervisor_ttl {
-    width: 70%;
-  }
-  .supervisor_box {
-    display: block;
-  }
-  .supervisor_box img {
-    width: 100%;
-  }
-  .supervisor_detail {
-    width: 100%;
-    text-align: center;
-    padding-top: 20px;
-  }
-  .supervisor_detail .supervisor_name {
-    font-size: 18px;
-  }
-  .supervisor_txt {
-    font-size: 14px;
-    text-align: left;
-  }
-  .supervisor_detail .supervisor_txt {
-    font-size: 14px;
-  }
-  article section:last-child {
-    margin-top: 0;
+    position: absolute;
+    top: 16px;
+    left: -10px;
   }
 
-  .btn_app {
-    width: 95%;
-  }
-  .btn_app_txt {
-    font-size: 10px;
+  .gymnastics_everyday {
     padding-bottom: 10px;
   }
-  .btn_app div a:first-child {
-    margin-right: 30px;
+  .gymnastics_everyday .gymnastics_everyday_image {
+    width: 20%;
+    top: 424%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
-  .btn_app div a:first-child img {
-    width: 218px;
-    margin-bottom: 10px;
+  .gymnastics_everyday .gymnastics_everyday_lead {
+    margin-bottom: 132px;
   }
-  .btn_app div a:last-child img {
+  .gymnastics_everyday .gymnastics_everyday_list li {
+    flex-direction: column;
+    padding: 24px 24px 32px;
+  }
+  .gymnastics_everyday .gymnastics_everyday_list li:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .gymnastics_everyday .gymnastics_everyday_list li .gymnastics_everyday_box {
+    width: 100%;
+    text-align: center;
+  }
+  .gymnastics_everyday .gymnastics_everyday_list li .gymnastics_everyday_subtitle {
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+  .gymnastics_everyday .gymnastics_everyday_list li .gymnastics_everyday_title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .gymnastics_everyday .gymnastics_everyday_list li .gymnastics_everyday_txt {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  .gymnastics_everyday .gymnastics_everyday_list li .gymnastics_everyday_item_image {
     width: 100%;
   }
 
-  .gymnastics section.diagnosis_link .inn02 {
-    width: 95%;
+  .gymnastics_supervisor {
+    margin-top: 0 !important;
+  }
+  .gymnastics_supervisor .gymnastics_supervisor_box {
+    width: 100%;
+  }
+  .gymnastics_supervisor .gymnastics_supervisor_box h2::after {
+    display: none;
+  }
+  .gymnastics_supervisor .gymnastics_supervisor_title {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 26px;
+    position: relative;
+  }
+  .gymnastics_supervisor .gymnastics_supervisor_image {
+    width: 34%;
+  }
+  .gymnastics_supervisor .gymnastics_supervisor_box h2 {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+  .gymnastics_supervisor .gymnastics_supervisor_name {
+    font-size: 20px;
+  }
+  .gymnastics_supervisor .gymnastics_supervisor_subtitle {
+    font-size: 14px;
+  }
+  .gymnastics_supervisor .gymnastics_supervisor_title::after {
+    position: absolute;
+    content: "";
+    background-color: #de4186;
+    border-radius: 20px;
+    width: 100%;
+    height: 1px;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .gymnastics_supervisor .gymnastics_supervisor_txt {
+    font-size: 14px;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .gymnastics_supervisor .gymnastics_supervisor_career {
+    width: 100%;
+    margin-right: 0;
+  }
+  .gymnastics_supervisor .gymnastics_supervisor_notes {
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+  .gymnastics_supervisor .gymnastics_supervisor_notes span {
+    padding-left: 1em;
+  }
+  .gymnastics_supervisor .gymnastics_supervisor_notes span::before {
+    top: 22%;
   }
 }
