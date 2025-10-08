@@ -1,0 +1,402 @@
+@charset "utf-8";
+main {
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+section.kv_area {
+  padding-top: 0;
+}
+article.page .kv_top img {
+  object-fit: contain;
+}
+.gymnastics span.page_ttl {
+  color: #0c559e;
+  top: 16%;
+  left: 10%;
+  margin: unset;
+  line-height: 1.1;
+  text-align: left;
+}
+.gymnastics span.page_txt {
+  font-size: 24px;
+}
+.gymnastics span.page_lead {
+  position: absolute;
+  top: 36%;
+  right: 17%;
+  font-size: 20px;
+  color: #0c559e;
+  letter-spacing: 1.7px;
+  line-height: 1.7;
+}
+.bell_luco {
+  width: 10%;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.lead_box {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.lead_detail {
+  display: inline-block;
+  text-align: left;
+}
+.lead_ttl {
+  font-size: 28px;
+  color: #e3a700;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.lead_txt {
+  font-size: 18px;
+  color: #0980b6;
+  font-weight: 500;
+}
+.bellco {
+  margin-top: 80px;
+}
+h2.bellco_ttl {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  /* width: 26%; */
+  background-color: #d54900;
+  /* padding: 24px 2% 24px 11%; */
+  border-radius: 0 50px 50px 0;
+  width: 32%;
+  padding: 30px 4% 30px 13%;
+}
+.youtube {
+  max-width: 1150px;
+  width: 64%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+video {
+  width: 100%;
+}
+.supervisor {
+  text-align: center;
+  max-width: 1150px;
+  width: 64%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 7px #ccc;
+  padding: 2% 3%;
+  margin: 0 auto;
+  position: relative;
+}
+.supervisor .supervisor_ttl {
+  width: 47%;
+  position: absolute;
+  top: 1%;
+  left: -2.5%;
+}
+.supervisor_box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10%;
+}
+.supervisor_box img {
+  width: 26%;
+}
+.supervisor_detail {
+  width: 70%;
+  text-align: left;
+}
+.supervisor_detail .supervisor_name {
+  font-size: 24px;
+  color: #0980b6;
+  font-weight: bold;
+  border-bottom: 2px solid #0980b6;
+  padding-bottom: 14px;
+}
+.supervisor_detail .supervisor_txt {
+  font-size: 18px;
+  color: #666666;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.btn_app {
+  width: 40%;
+  margin: 0 auto;
+}
+.btn_app_txt {
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.btn_app div {
+  display: flex;
+  justify-content: center;
+}
+.btn_app div a:first-child {
+  margin-right: 100px;
+}
+.btn_app div a:first-child img {
+  width: 335px;
+}
+.btn_app div a:last-child img {
+  width: 387px;
+}
+
+section.foot_bnr_area .l_br {
+  margin: 0 auto;
+  float: unset;
+}
+section.foot_bnr_area .r_br {
+  display: none;
+}
+section.foot_bnr_area .inn02.contact_area {
+  display: none;
+}
+
+.gymnastics section.diagnosis_link .inn02 {
+  max-width: 1284px;
+  width: 70%;
+}
+
+@media only screen and (min-width: 1177px) {
+  .lead_box:before {
+    content: "";
+    display: inline-block;
+    max-width: 696px;
+    width: 26%;
+    height: 100%;
+    background-image: url(/wp-content/themes/ninchisho/img/gymnastics_l.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    left: -2%;
+  }
+  .lead_box:after {
+    content: "";
+    display: inline-block;
+    max-width: 611px;
+    width: 23%;
+    height: 100%;
+    background-image: url(/wp-content/themes/ninchisho/img/gymnastics_r.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    right: -2%;
+  }
+  .bellco:before {
+    content: "";
+    display: inline-block;
+    width: 24%;
+    min-height: 347px;
+    height: auto;
+    background-image: url(/wp-content/themes/ninchisho/img/round_l_02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 52%;
+    left: -5%;
+  }
+  .bellco:after {
+    content: "";
+    display: inline-block;
+    max-width: 542px;
+    width: 30%;
+    height: 100%;
+    background-image: url(/wp-content/themes/ninchisho/img/round_r_02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 24%;
+    right: -4%;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .gymnastics span.page_lead {
+    right: 13%;
+  }
+  .lead_box:before,
+  .lead_box:after {
+    width: 26%;
+  }
+  .bellco:after {
+    width: 34%;
+    right: -8%;
+  }
+  h2.bellco_ttl {
+    padding: 30px 4% 30px 11%;
+  }
+}
+@media only screen and (max-width: 1487px) {
+  .gymnastics span.page_lead {
+    right: 11%;
+  }
+  .lead_box:before,
+  .lead_box:after {
+    width: 30%;
+  }
+  .bellco:before {
+    width: 24%;
+    left: -8%;
+  }
+  h2.bellco_ttl {
+    font-size: 24px;
+    padding: 24px 2% 24px 14%;
+  }
+  .btn_app div {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .btn_app {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .btn_app div a:first-child {
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .gymnastics span.page_lead {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .breadcrumbs {
+    max-width: 95%;
+  }
+  .lead_box:before,
+  .lead_box:after {
+    width: 35%;
+  }
+  h2.bellco_ttl {
+    padding: 24px 2% 24px 10%;
+  }
+  .gymnastics span.page_txt {
+    font-size: 20px;
+  }
+  .btn_app {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  article.page .kv_top img {
+    width: 100%;
+    object-fit: unset;
+    aspect-ratio: unset;
+  }
+  .lead_ttl {
+    font-size: 20px;
+  }
+  .lead_txt {
+    font-size: 14px;
+  }
+  .gymnastics span.page_ttl {
+    font-size: 16px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .gymnastics span.page_txt {
+    font-size: 14px;
+  }
+  .gymnastics span.page_lead {
+    font-size: 12px;
+    top: 42%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+  .bell_luco {
+    bottom: -18%;
+    width: 40%;
+  }
+
+  .bellco {
+    margin-top: 0;
+  }
+  h2.bellco_ttl {
+    font-size: 20px;
+    font-weight: bold;
+    width: 70%;
+    padding: 12px 1% 12px 14%;
+  }
+  .youtube {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 95%;
+    width: 100%;
+  }
+  .supervisor {
+    width: 90%;
+    padding: 28px 20px 20px;
+  }
+  .supervisor .supervisor_ttl {
+    width: 70%;
+  }
+  .supervisor_box {
+    display: block;
+  }
+  .supervisor_box img {
+    width: 100%;
+  }
+  .supervisor_detail {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .supervisor_detail .supervisor_name {
+    font-size: 18px;
+  }
+  .supervisor_txt {
+    font-size: 14px;
+    text-align: left;
+  }
+  .supervisor_detail .supervisor_txt {
+    font-size: 14px;
+  }
+  article section:last-child {
+    margin-top: 0;
+  }
+
+  .btn_app {
+    width: 95%;
+  }
+  .btn_app_txt {
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+  .btn_app div a:first-child {
+    margin-right: 30px;
+  }
+  .btn_app div a:first-child img {
+    width: 218px;
+    margin-bottom: 10px;
+  }
+  .btn_app div a:last-child img {
+    width: 100%;
+  }
+
+  .gymnastics section.diagnosis_link .inn02 {
+    width: 95%;
+  }
+}

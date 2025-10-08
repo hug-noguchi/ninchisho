@@ -1,0 +1,120 @@
+@charset "utf-8";
+h3.heading,
+.dateLabel {
+  display: none;
+}
+.supervisor {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.supervisor h2 {
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.supervisor h2 span {
+  font-size: 1.4vw;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.supervisor_inn {
+  background: #d9efff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 7px #ccc;
+}
+.supervisor_box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.supervisor_image {
+  width: 28%;
+}
+.supervisor_image div {
+  max-width: 454px;
+  position: relative;
+  z-index: 1;
+}
+.supervisor_image div img {
+  max-width: 100%;
+  height: auto;
+}
+.supervisor_txt {
+  font-size: 1vw;
+  color: #666666;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 68%;
+  padding: 30px;
+  box-shadow: 1px 1px 7px #ccc;
+  position: relative;
+  line-height: 1.7;
+  order: -1;
+}
+.info_detail p {
+  margin-bottom: 0 !important;
+}
+@media only screen and (max-width: 1366px) {
+  .breadcrumbs {
+    max-width: 95%;
+  }
+}
+@media only screen and (max-width: 1176px) {
+  .supervisor_inn {
+    max-width: 95%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .supervisor_inn h2 {
+    padding-bottom: 20px;
+  }
+  .supervisor h2 span {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  .supervisor_box {
+    display: block;
+  }
+  .supervisor_image {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .supervisor_image div {
+    z-index: unset;
+  }
+  .supervisor_txt {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .supervisor_txt {
+    font-size: 14px;
+  }
+  .supervisor_inn {
+    max-width: 95%;
+    padding: 20px;
+  }
+  .supervisor_box {
+    display: block;
+    width: 100%;
+    position: unset;
+  }
+  .supervisor_image {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  .supervisor_image div {
+    max-width: 100%;
+    width: 100%;
+  }
+  .supervisor_txt {
+    padding: 20px;
+    width: 100%;
+    position: unset;
+  }
+}
+
+.btn_appstore {
+  margin-top: 60px;
+}

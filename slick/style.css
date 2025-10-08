@@ -1,0 +1,201 @@
+.slick-slide {
+  margin: 0 10px;
+}
+
+.slide-items {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-items img {
+  width: 100%;
+  object-fit: cover;
+}
+.slide-items {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.slide-items img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 40px;
+  border: 6px solid #ffde8f;
+  border-radius: 10px;
+}
+section.kv_area ul.slide-items li.slick-slide a {
+  position: relative;
+}
+section.kv_area ul.slide-items li.slick-slide a time {
+  font-size: 40px;
+  border-bottom: 1px solid;
+  position: absolute;
+  top: 40px;
+  right: 3%;
+  line-height: 40px;
+  padding-bottom: 8px;
+  color: #fff;
+  text-shadow: 1px 1px 4px #000000;
+  font-weight: 500;
+}
+section.kv_area ul.slide-items li.slick-slide a .info_cat_area {
+  position: absolute;
+  top: 90px;
+  right: 3%;
+}
+section.kv_area ul.slide-items li.slick-slide a .info_cat_area span {
+  font-size: 16px;
+  display: inline-block;
+  color: #fff;
+  text-shadow: 2px 2px 3px #000000;
+  font-weight: 500;
+}
+section.kv_area ul.slide-items li.slick-slide a h2.ttl {
+  position: absolute;
+  bottom: 50px;
+  left: 3%;
+  font-size: 26px;
+  color: #fff;
+  text-shadow: 1px 1px 4px #000000;
+  line-height: 1.2;
+}
+.slick-dots li button:before {
+  font-size: 10px;
+  top: 6px;
+}
+.slick-next.slick-arrow {
+  right: 10%;
+  z-index: 100;
+}
+.slick-prev.slick-arrow {
+  left: 10%;
+  z-index: 100;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 46px;
+  line-height: 1;
+  color: #2a6aaa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 800;
+}
+.slide-content {
+  margin-bottom: 100px;
+  padding: 4px 10% 0px 10%;
+}
+
+.slide-content span {
+  display: block;
+  margin-bottom: 10px;
+}
+.slide-content span:last-child {
+  margin-bottom: 0px;
+}
+.slide-content span > span {
+  display: inline-block;
+  vertical-align: bottom;
+}
+ul.slide-items.slick-slider .slide-content span > span {
+  margin-bottom: 0px;
+  margin-top: -2px;
+  color: #222;
+  background-color: #e5e5e5;
+  padding: 4px 8px;
+  font-size: 10px;
+  border-radius: 5px;
+  vertical-align: text-top;
+  margin-right: 4px;
+  display: inline-block;
+  line-height: 10px;
+  font-weight: normal;
+}
+.slide-items img {
+  margin-bottom: 48px;
+}
+
+@media only screen and (max-width: 979px) {
+  .slick-prev.slick-arrow,
+  .slick-next.slick-arrow {
+    top: 43.3vw;
+  }
+  .slide-content {
+    margin-bottom: 50px;
+  }
+
+  section.kv_area ul.slide-items li.slick-slide a time {
+    font-size: 30px;
+  }
+  section.kv_area ul.slide-items li.slick-slide a h2.ttl {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .slide-content {
+    /* text-align: left; */
+    margin-bottom: 0px;
+    padding: 0;
+  }
+  section.kv_area {
+    height: auto !important;
+  }
+  .slide-content {
+    text-align: left;
+    margin-bottom: 90px;
+  }
+  .slide-items img {
+    margin-bottom: 30px;
+  }
+  ul.slide-items.slick-slider .slide-content span > span {
+    margin-top: -3px;
+  }
+  .slick-prev.slick-arrow {
+    left: 3%;
+  }
+  .slick-next.slick-arrow {
+    right: 10%;
+  }
+  section.kv_area ul.slide-items li.slick-slide a time {
+    font-size: 24px;
+    border-bottom: none;
+    position: static;
+    top: 9px;
+    right: 3%;
+    line-height: 24px;
+    padding-bottom: 8px;
+    color: #000;
+    text-shadow: none;
+    font-weight: 500;
+  }
+  section.kv_area ul.slide-items li.slick-slide a .info_cat_area {
+    top: 50px;
+    position: static;
+    text-align: left;
+  }
+  section.kv_area ul.slide-items li.slick-slide a .info_cat_area span {
+    font-size: 12px;
+    display: block;
+    position: static;
+    color: #000;
+    text-shadow: none;
+  }
+  section.kv_area ul.slide-items li.slick-slide a h2.ttl {
+    font-size: 18px;
+    color: #000;
+    display: block;
+    width: 100%;
+    position: static;
+    text-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .slide-content {
+    margin-bottom: 50px;
+  }
+}

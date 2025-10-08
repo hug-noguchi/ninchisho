@@ -1,0 +1,453 @@
+@charset "utf-8";
+main {
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+section.kv_area {
+  padding-top: 0;
+}
+.diagnostic_referral span.page_ttl {
+  color: #f1a21b;
+}
+.diagnostic_referral h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.diagnostic_referral_lead .lead_inn {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 7px #ccc;
+  position: relative;
+  text-align: center;
+  max-width: 580px;
+}
+.diagnostic_referral_lead .lead_txt {
+  font-size: 1.45vw;
+  color: #be7e11;
+  text-align: left;
+  line-height: 1.75;
+}
+.can_inn {
+  max-width: 1476px;
+  border: 6px solid #0980b6;
+  border-radius: 100px;
+  padding: 80px 24px 50px;
+  margin: 0 auto;
+  position: relative;
+}
+h2.can_ttl {
+  font-size: 30px;
+  color: #fff;
+  max-width: 744px;
+  width: 40%;
+  background-color: #0980b6;
+  border-radius: 16px;
+  padding: 16px 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.can_box {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+.can_image {
+  width: 39%;
+}
+.can_lead {
+  font-size: 1.45vw;
+  width: 42%;
+  line-height: 1.75;
+}
+.can_table {
+  display: flex;
+  justify-content: space-between;
+}
+.results {
+  position: relative;
+}
+.results,
+.results_list {
+  width: 49%;
+}
+.btn_results {
+  max-width: 512px;
+  width: 62%;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.btn_top {
+  max-width: 512px;
+  width: 62%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.btn_member {
+  display: flex;
+  justify-content: center;
+}
+.btn_member div {
+  width: 40%;
+}
+.btn_member div:first-child {
+  margin-right: 26px;
+}
+.detection_inn {
+  max-width: 1476px;
+  border: 6px solid #0980b6;
+  border-radius: 40px;
+  padding: 24px;
+  margin: 0 auto;
+  position: relative;
+}
+.detection_inn h2 {
+  color: #0980b6;
+  font-weight: 500;
+  padding-bottom: 60px;
+}
+.detection_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.detection_txt {
+  width: 52%;
+  font-size: 1.25vw;
+  color: #666666;
+  line-height: 1.45;
+}
+.detection_image {
+  width: 36%;
+}
+.supervisor {
+  width: 100%;
+  height: auto;
+  background-image: url("../img/bg_supervisor.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+.supervisor h2 {
+  color: #149c3d;
+  font-weight: 500;
+  padding-bottom: 80px;
+}
+.supervisor_inn {
+  width: 70%;
+  margin: 0 auto;
+}
+.supervisor_box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  max-width: 1641px;
+  margin: 0 auto;
+  position: relative;
+}
+.supervisor_image {
+  width: 40%;
+  margin-right: 40px;
+}
+.supervisor_image div {
+  max-width: 454px;
+  position: relative;
+  z-index: 1;
+}
+.supervisor_box .supervisor_name {
+  position: absolute;
+  top: 16%;
+  left: 24%;
+}
+.supervisor_box .supervisor_name span {
+  font-size: 1.4vw;
+  color: #0980b6;
+  border: 1px solid #0980b6;
+  border-radius: 24px;
+  padding: 6% 86px 6% 209px;
+  text-align: right;
+  background-color: #fff;
+}
+.supervisor_txt {
+  font-size: 1vw;
+  color: #666666;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 70%;
+  padding: 30px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 7px #ccc;
+  position: relative;
+  line-height: 1.7;
+  order: -1;
+}
+
+.btn_app {
+  width: 40%;
+  margin: 0 auto;
+}
+.btn_app div {
+  display: flex;
+  justify-content: center;
+}
+.btn_app div a:first-child {
+  margin-right: 100px;
+}
+.btn_app div a:first-child img {
+  width: 335px;
+}
+.btn_app div a:last-child img {
+  width: 387px;
+}
+
+@media only screen and (max-width: 1487px) {
+  .can_inn,
+  .btn_app div {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .btn_app {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .btn_app div a:first-child {
+    margin-right: 60px;
+  }
+  .detection_inn {
+    max-width: 85%;
+  }
+  .supervisor_box .supervisor_name {
+    top: 18%;
+    left: 18%;
+  }
+  .supervisor_box .supervisor_name span {
+    padding: 4% 56px 4% 209px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .breadcrumbs {
+    max-width: 95%;
+  }
+  .supervisor_box .supervisor_name {
+    top: 14%;
+    left: 16%;
+  }
+  .supervisor_box .supervisor_name span {
+    padding: 6% 56px 6% 209px;
+  }
+}
+@media only screen and (max-width: 1176px) {
+  .diagnostic_referral h2 {
+    font-size: 30px;
+  }
+  .diagnostic_referral_lead .lead_inn,
+  .can_inn,
+  .detection_inn,
+  .supervisor_inn {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  .btn_app {
+    width: 60%;
+  }
+  .supervisor_box {
+    display: block;
+  }
+  .supervisor_image {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .supervisor_image div {
+    z-index: unset;
+  }
+  .supervisor_box .supervisor_name {
+    top: 48%;
+    left: 53%;
+  }
+  .supervisor_box .supervisor_name span {
+    padding: 6% 76px;
+    border-radius: 14px;
+  }
+  .supervisor_txt {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .diagnostic_referral_lead .lead_txt,
+  .can_lead {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+@media only screen and (min-width: 781px) {
+  .diagnostic_referral_lead {
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .diagnostic_referral span.page_ttl {
+    height: 42px;
+  }
+  .diagnostic_referral_lead .lead_inn {
+    max-width: 95%;
+    padding: 20px;
+  }
+  .detection_txt,
+  .supervisor_txt {
+    font-size: 14px;
+  }
+  .diagnostic_can {
+    margin-top: 40px;
+  }
+  .can_inn {
+    width: 100%;
+    padding: 60px 20px 30px;
+    border: 4px solid #0980b6;
+    border-radius: 10px;
+    max-width: 95%;
+  }
+  h2.can_ttl {
+    font-size: 24px;
+    width: 90%;
+    padding: 16px 0;
+  }
+  .can_box {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .can_image {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .can_lead {
+    width: 100%;
+  }
+  .can_table {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .results,
+  .results_list {
+    width: 100%;
+  }
+  .results {
+    margin-bottom: 20px;
+  }
+  .can_table {
+    margin-bottom: 40px;
+  }
+  .btn_member {
+    display: block;
+  }
+  .btn_member div {
+    width: 100%;
+  }
+  .btn_member div:first-child {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  span.list_arrow {
+    position: absolute;
+    top: -5px;
+    text-align: right;
+  }
+  .detection_inn {
+    width: 100%;
+    padding: 40px 20px;
+    border: 4px solid #0980b6;
+    border-radius: 10px;
+    max-width: 95%;
+  }
+  .detection_inn h2 {
+    padding-bottom: 40px;
+  }
+  .detection_box {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .detection_txt {
+    width: 100%;
+  }
+  .detection_image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .supervisor {
+    margin-top: 40px;
+    padding: 80px 0;
+  }
+  .supervisor_inn {
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .supervisor_inn h2 {
+    padding-bottom: 40px;
+  }
+  .supervisor_box {
+    display: block;
+    width: 100%;
+    position: unset;
+  }
+  .supervisor_image {
+    width: 86%;
+    margin-right: 0;
+    margin: 0 auto 20px;
+  }
+  .supervisor_image div {
+    max-width: 100%;
+    width: 100%;
+  }
+  .supervisor_box .supervisor_name {
+    /* width: 70%;
+    position: absolute;
+    top: 43%;
+    left: 32%; */
+    text-align: center;
+    width: 100%;
+    position: unset;
+    margin: 30px 0 30px;
+  }
+  .supervisor_box .supervisor_name span {
+    font-size: 24px;
+    padding: 16px 36px;
+  }
+  .supervisor_txt {
+    padding: 20px;
+    width: 100%;
+    position: unset;
+  }
+  .btn_app {
+    width: 95%;
+    margin-top: 60px;
+  }
+  .btn_app div a:first-child {
+    margin-right: 30px;
+  }
+  .btn_app div a:first-child img {
+    width: 218px;
+    margin-bottom: 10px;
+  }
+  .btn_app div a:last-child img {
+    width: 100%;
+  }
+}
