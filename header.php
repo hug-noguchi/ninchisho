@@ -10,7 +10,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
-<!--meta name="description" content="<?php echo trim(wp_title('', false)); if(wp_title('', false)) { echo ' - '; } bloginfo('description'); ?>"-->
+<meta name="description" content="<?php echo trim(wp_title('', false)); if(wp_title('', false)) { echo ' - '; } bloginfo('description'); ?>">
 <title><?php global $page, $paged;
   wp_title( '|', true, 'right' );
 	bloginfo( 'name' );
@@ -33,6 +33,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/diagnosis.css<?php echo '?' .filemtime( get_template_directory() . '/css/diagnosis.css'); ?>">
   <?php elseif ( is_page("diagnostic_referral") ) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/diagnostic_referral.css<?php echo '?' .filemtime( get_template_directory() . '/css/diagnostic_referral.css'); ?>">
+  <?php elseif ( is_page("basic_knowledge") ) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/basic_knowledge.css<?php echo '?' .filemtime( get_template_directory() . '/css/basic_knowledge.css'); ?>">
   <?php elseif ( is_singular("info") ) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/info.css<?php echo '?' .filemtime( get_template_directory() . '/css/info.css'); ?>">
 <?php endif; ?>
@@ -81,8 +83,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </a>
     </h1>
     <div class="header__cnt pc">
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>/diagnostic_referral/">認知機能チェック</a>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>/gymnastics_introduction/">認知症予防の体操</a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>/diagnostic_referral/">認知機能診断紹介</a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>/gymnastics_introduction/">ベルコ体操紹介</a>
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact/">お問い合わせ</a>
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>search/"><span>記事を探す</span></a>
     </div>
@@ -115,7 +117,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>postviews_list#tab06_content">ー ニュース記事</a>
               </li> -->
               <li>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>diagnostic_referral/">認知機能チェック</a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>diagnostic_referral/">認知機能診断紹介</a>
               </li>
               <li class="pl">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>diagnostic_referral#diagnostic_can">ー 認知機能チェックによってできること</a>
@@ -124,7 +126,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>diagnostic_referral#supervisor">ー 監修者</a>
               </li>
               <li>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>gymnastics_introduction/">認知症予防の体操</a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>basic_knowledge/">認知症の基礎知識</a>
+              </li>
+              <li>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>gymnastics_introduction/">ベルコ体操紹介</a>
               </li>
               <li>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/">お問い合わせ</a>
