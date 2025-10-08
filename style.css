@@ -523,10 +523,11 @@ header {
   box-sizing: border-box;
   z-index: 1000;
   background: #fff;
-  /* border-bottom: 1px solid #ccc; */
 }
 .inn_head {
   position: relative;
+  /* max-width: 1176px;
+  margin: 0 auto; */
   max-width: 1780px;
   margin: 0 0 0 auto;
   width: 90%;
@@ -7126,7 +7127,6 @@ display:none;
   }
 }
 
-/* デフォルトのスタイル（PC表示用） */
 .contact02 .form__table {
   width: 100%;
   border-collapse: collapse;
@@ -7168,4 +7168,235 @@ display:none;
     width: 100%;
     box-sizing: border-box;
   }
+}
+
+/* アプリ「ベルコメンバーズ」には身近なサービスがいろいろ */
+.app_service {
+  padding-bottom: 0;
+}
+.app_service .app_service_title_image {
+  position: absolute;
+  top: -50%;
+  right: 6%;
+  width: 19%;
+}
+.app_service .app_service_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 56px;
+}
+.app_service .app_service_list > li {
+  width: 48%;
+  background-color: #fff;
+  border: 3px dotted #41c3de;
+  border-radius: 20px;
+  padding: 42px 48px 30px;
+  position: relative;
+  overflow: visible;
+}
+.app_service .app_service_list > li ul li::before {
+  content: "\25CF";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ffd400;
+  font-size: 10px;
+}
+.app_service .app_service_list > li .app_service_icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+}
+.app_service .app_service_list > li h3 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.app_service .app_service_list > li ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 27px;
+  margin-bottom: 16px;
+}
+.app_service .app_service_list > li ul li {
+  position: relative;
+  font-size: 18px;
+  color: #333;
+  padding-left: 18px;
+}
+.app_service .app_service_lead {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.app_service .app_service_image {
+  width: 17%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 780px) {
+  .app_service .app_service_title_image {
+    width: 34%;
+    top: 260%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .app_service .app_service_list {
+    gap: 24px;
+    margin-top: 160px;
+    margin-bottom: 32px;
+  }
+  .app_service .app_service_list > li {
+    width: 100%;
+    padding: 24px;
+  }
+  .app_service .app_service_list > li .app_service_icon {
+    margin: 0 auto 12px;
+  }
+  .app_service .app_service_list > li h3 {
+    font-size: 22px;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+  }
+  .app_service .app_service_list > li ul {
+    gap: 10px;
+  }
+  .app_service .app_service_list > li ul li {
+    font-size: 16px;
+    padding-left: 12px;
+  }
+  .app_service .app_service_lead {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .app_service .app_service_image {
+    width: 54%;
+  }
+}
+
+/* ベルコメンバーズ */
+.app_box_wrapper {
+  max-width: 100%;
+  position: relative;
+}
+.app_box_wrapper img.bg_app_box {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.app_box_wrapper .sec_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 43%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.app_box .app_box_wrapper .app_image {
+  width: 30%;
+}
+.app_box .app_box_wrapper .app_detail {
+  width: 60%;
+}
+.app_box .app_box_wrapper .app_detail .app_detail_title {
+  font-size: clamp(18px, 1.6vw, 24px);
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  background-color: #41c3de;
+  border-radius: 28px;
+  padding: 0.35em 0;
+  margin: 0 0 min(1.2vw, 20px);
+}
+.app_box .app_box_wrapper .app_detail .appstore_logo {
+  margin: 0 auto min(1vw, 20px);
+}
+.app_box .app_box_wrapper .app_detail .app_detail_txt {
+  font-weight: 500;
+  margin: 0 0 min(1vw, 32px);
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
+  font-size: clamp(20px, 1.1vw, 24px);
+  letter-spacing: 0.04em;
+}
+.app_box .app_box_wrapper .app_detail .btn_app_box {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+@media only screen and (max-width: 1620px) {
+  .app_box .app_box_wrapper .app_detail .app_detail_txt {
+    font-size: clamp(15px, 1.1vw, 24px);
+    letter-spacing: 0.06em;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .app_box .app_box_wrapper .app_detail .app_detail_txt {
+    font-size: clamp(15px, 1.1vw, 22px);
+    letter-spacing: -0.06em;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .app_box .app_box_wrapper .app_detail .app_detail_txt {
+    font-size: clamp(14px, 1.15vw, 22px);
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .app_box .app_box_wrapper .app_detail .app_detail_txt {
+    font-size: clamp(13px, 0.9vw, 20px);
+  }
+}
+@media only screen and (max-width: 780px) {
+  .app_box .app_box_wrapper .app_detail .app_detail_txt {
+    font-size: clamp(15px, 4vw, 20px);
+  }
+}
+@media only screen and (max-width: 780px) {
+  .app_box_wrapper img.bg_app_box {
+    aspect-ratio: unset;
+  }
+  .app_box_wrapper .sec_inner {
+    width: 86%;
+    padding: 0;
+  }
+  .app_box .app_box_wrapper .app_detail {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .app_box .app_box_wrapper .app_detail .app_detail_title {
+    padding: 0.1em 0;
+    margin-bottom: 12px;
+  }
+  .app_box .app_box_wrapper .app_detail .appstore_logo {
+    margin-bottom: 24px;
+  }
+  .app_box .app_box_wrapper .app_image {
+    width: 48%;
+    margin: 0 auto 18px;
+  }
+  .app_box .app_box_wrapper .app_detail .app_detail_txt {
+    text-align: center;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  .app_box .app_box_wrapper .app_detail .btn_app_box {
+    gap: 8px;
+  }
+}
+
+/* テキストリンク */
+.types_link {
+  color: #41c3de;
+  border-bottom: 1px solid;
 }
