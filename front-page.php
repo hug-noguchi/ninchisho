@@ -486,11 +486,12 @@
                     実は、認知症は病気の一つ。<br>
                     正しく理解し、早期発見・治療につなげることが大切です。<br>
                     このメディアでは、認知症についてわかりやすく解説していきます。<br>
-                    一緒に学び、理解を深めましょう。
+                    一緒に学び、理解を深めましょう。<br>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>basic_knowledge/" class="types_link">認知症の基礎知識をこちらにまとめました。</a>
                 </span>
             </div>
             <div class="row_bx_under">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/about_img.png">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>basic_knowledge/" class="types_link"><img src="<?php echo get_template_directory_uri(); ?>/img/about_img.png"></a>
             </div>
         </div>
     </div>
@@ -499,9 +500,7 @@
 
   <section class="pad_bt01">
     <div class="inn">
-
-        <div class="more"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/diagnostic_referral/">認知機能チェックはこちら</a></div>
-
+        <div class="more"><a href="<?php echo esc_url( home_url( '/' ) ); ?>basic_knowledge/">認知症の基礎知識はこちら</a></div>
     </div>
   </section>
 
@@ -513,11 +512,7 @@
                 キーワードを入力して、検索するボタンを押してください。
             </div>
             <div class="serch_form scroll_up">
-<?php if ( function_exists( 'feas_search_form' ) ) { ?>
-  <div class="feas-search-form">
-    <?php feas_search_form(1); ?>
-  </div>
-<?php } ?>
+              <?php feas_search_form( 1 ); ?>
             </div>
         </div>
     </div>
