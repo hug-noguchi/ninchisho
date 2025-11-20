@@ -56,11 +56,11 @@
       <input id="tab01" type="radio" name="tab_switch" checked>
       <label class="tab_label all" for="tab01">すべて</label>
       <input id="tab02" type="radio" name="tab_switch">
-      <label class="tab_label about_prevention" for="tab02">認知症について</label>
+      <label class="tab_label about_prevention" for="tab02">認知症に<br class="sp">ついて</label>
       <input id="tab03" type="radio" name="tab_switch">
       <label class="tab_label dementia_prevention" for="tab03">認知症予防</label>
       <input id="tab04" type="radio" name="tab_switch">
-      <label class="tab_label for_dementia_caregivers" for="tab04">認知症介護者向け</label>
+      <label class="tab_label for_dementia_caregivers" for="tab04">認知症<br class="sp">介護者向け</label>
       <!-- <input id="tab05" type="radio" name="tab_switch">
       <label class="tab_label interview" for="tab05">インタビュー記事</label>
       <input id="tab06" type="radio" name="tab_switch">
@@ -464,43 +464,130 @@
               <?php endwhile; ?>
               </ul>
               <?php wp_reset_query();endif; ?>
+            </div>
+          </div>
         </div>
-  </div>
-
-</div>
-
-        <div class="more"><a href="<?php echo esc_url( home_url( '/' ) ); ?>info/">記事一覧へ</a></div>
+      <div class="more"><a href="<?php echo esc_url( home_url( '/' ) ); ?>info/">記事一覧へ</a></div>
     </div>
   </section>
 
-
-
-  <section class="about_area pad_bt01">
-    <div class="inn row_bx">
-        <div class="bx">
-            <div class="row_bx_under">
-                <h2 class="ttl js_typing">認知症とは</h2>
-                <span>
-                    「認知症」という言葉、耳にしたことはありますか？<br>
-                    年齢を重ねると誰でもなると思っていませんか？<br>
-                    実は、認知症は病気の一つ。<br>
-                    正しく理解し、早期発見・治療につなげることが大切です。<br>
-                    このメディアでは、認知症についてわかりやすく解説していきます。<br>
-                    一緒に学び、理解を深めましょう。<br>
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>basic_knowledge/" class="types_link">認知症の基礎知識をこちらにまとめました。</a>
-                </span>
-            </div>
-            <div class="row_bx_under">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>basic_knowledge/" class="types_link"><img src="<?php echo get_template_directory_uri(); ?>/img/about_img.png"></a>
-            </div>
-        </div>
-    </div>
-  </section>
-
-
-  <section class="pad_bt01">
+  <section class="about_contents">
     <div class="inn">
-        <div class="more"><a href="<?php echo esc_url( home_url( '/' ) ); ?>basic_knowledge/">認知症の基礎知識はこちら</a></div>
+      <div class="about_contents_title_image">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/about_contents_image.png">
+      </div>
+      <ul>
+        <li class="about_dementia">
+          <div class="about_contents_text">
+            <h2><span>認知症とは？</span></h2>
+            <div class="about_contents_image about_dementia_image sp">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>basic_knowledge/">
+              <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/about_dementia_image_sp.png">
+              </div>
+              <div class="icon_about_dementia">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon_about_dementia.png">
+              </div>
+            </a>
+          </div>
+            <p>
+              「認知症」という言葉、耳にしたことはありますか？<br>
+              年齢を重ねると誰でもなると思っていませんか？<br>
+              実は、認知症は病気の一つ。
+            </p>
+            <p>
+              正しく理解し、早期発見・治療につなげることが大切です。<br>
+              このメディアでは、認知症についてわかりやすく解説していきます。一緒に学び、理解を深めましょう。
+            </p>
+            <div class="btn_about_contents">
+              <div class="more"><a href="<?php echo esc_url( home_url( '/' ) ); ?>basic_knowledge/">認知症の基礎知識はこちら</a></div>
+            </div>
+          </div>
+          <div class="about_contents_image about_dementia_image pc">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>basic_knowledge/">
+              <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/about_dementia_image.png">
+              </div>
+              <div class="icon_about_dementia">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon_about_dementia.png">
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="about_check">
+          <div class="about_contents_text">
+            <h2><span>認知機能チェック</span></h2>
+            <div class="about_contents_image sp">
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>diagnostic_referral/">
+                <div>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/about_check_image_sp.png">
+                </div>
+                <div class="icon_about_check">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/icon_about_check.png">
+                </div>
+              </a>
+            </div>
+            <p>
+              認知機能チェックとは、記憶力・判断力・注意力・言語能力など、脳の働きに関わる機能を確認するための簡単な検査です。
+            </p>
+            <p>
+              ベルコが運営する生活支援アプリ「ベルコメンバーズ」では、認知症予防の専門医・浦上克哉教授（日本認知症予防学会代表理事）監修による「認知機能チェック」をご利用いただけます。
+            </p>
+            <p>
+              アプリに登録すれば、ご自宅にいながら手軽にチェックが可能。<br>
+              結果はグラフで分かりやすく表示され、ご自身やご家族の健康管理に役立てていただけます。
+            </p>
+            <div class="btn_about_contents">
+              <div class="more"><a href="<?php echo esc_url( home_url( '/' ) ); ?>diagnostic_referral/">認知機能チェックはこちら</a></div>
+            </div>
+          </div>
+          <div class="about_contents_image pc">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>diagnostic_referral/">
+              <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/about_check_image.png">
+              </div>
+              <div class="icon_about_check">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon_about_check.png">
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="about_gymnastics">
+          <div class="about_contents_text">
+            <h2><span>認知症予防体操</span></h2>
+            <div class="about_contents_image sp">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>gymnastics_introduction/">
+              <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/about_gymnastics_image_sp.png">
+              </div>
+              <div class="icon_about_gymnastics">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon_about_gymnastics.png">
+              </div>
+            </a>
+          </div>
+            <p>
+              頭と体を同時に使うことで、脳と身体の両方にやさしく刺激を与えることができます。<br>
+              おうちでできる簡単な体操から、楽しみながら認知症予防をはじめてみませんか？まずは、動画を見ながら一緒にやってみましょう。
+            </p>
+            <p>
+              アプリ「ベルコメンバーズ」では、認知症予防だけでなく、就寝前のストレッチやお出かけ前の体ほぐしなど、日常のさまざまなシーンで役立つ体操動画を多数ご紹介しています。
+            </p>
+            <div class="btn_about_contents">
+              <div class="more"><a href="<?php echo esc_url( home_url( '/' ) ); ?>gymnastics_introduction/">認知症予防体操はこちら</a></div>
+            </div>
+          </div>
+          <div class="about_contents_image pc">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>gymnastics_introduction/">
+              <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/about_gymnastics_image.png">
+              </div>
+              <div class="icon_about_gymnastics">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon_about_gymnastics.png">
+              </div>
+            </a>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -560,4 +647,5 @@
     </div>
   </section>
 
+  <?php include get_template_directory() . '/template/appbox.php'; ?>
 <?php get_footer(); ?>
