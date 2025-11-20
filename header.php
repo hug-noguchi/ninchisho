@@ -73,19 +73,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <?php if (  is_front_page() ||  is_home() ) : ?>
 <?php endif; ?>
 
-
 <header>
   <div class="inn_head">
-    <h1 class="header__logo">
+    <div class="header__logo">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
         <img src="<?php bloginfo('template_url'); ?>/img/logo_head.jpg" alt="<?php bloginfo( 'description' ); ?>" class="pc">
 		  <img src="<?php bloginfo('template_url'); ?>/img/logo_head.jpg" alt="<?php bloginfo( 'description' ); ?>" class="sp">
       </a>
-    </h1>
+    </div>
     <div class="header__cnt pc">
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>/diagnostic_referral/">認知機能診断紹介</a>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>/gymnastics_introduction/">ベルコ体操紹介</a>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact/">お問い合わせ</a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>basic_knowledge/">認知症の基礎知識</a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>diagnostic_referral/">認知機能診断紹介</a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>gymnastics_introduction/">ベルコ体操紹介</a>
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>search/"><span>記事を探す</span></a>
     </div>
     <nav class="sp">
@@ -110,12 +109,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li class="pl">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>postviews_list#tab04_content">ー 認知症介護者向け</a>
               </li>
-              <!-- <li class="pl">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>postviews_list#tab05_content">ー インタビュー記事</a>
-              </li>
-              <li class="pl">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>postviews_list#tab06_content">ー ニュース記事</a>
-              </li> -->
               <li>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>diagnostic_referral/">認知機能診断紹介</a>
               </li>
@@ -130,9 +123,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </li>
               <li>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>gymnastics_introduction/">ベルコ体操紹介</a>
-              </li>
-              <li>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/">お問い合わせ</a>
               </li>
               <li class="hd_search_sp">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>search/"><span>記事を探す</span></a>
