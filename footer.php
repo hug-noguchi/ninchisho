@@ -1,25 +1,4 @@
-<section class="foot_bnr_area">
-    <div class="inn02">
-        <div class="bx">
-            <div class="l_br">
-                <a href="#">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/foot_bn_01.png">
-                </a>
-            </div>
-            <div class="r_br">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/gymnastics_introduction/">
-									<!-- <img src="<?php echo get_template_directory_uri(); ?>/img/foot_bn_02.png"> -->
-									<img src="<?php echo get_template_directory_uri(); ?>/img/thum_youtube.png">
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="inn02 contact_area">
-        <h2 class="ttl"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact/"><span>お問い合わせはこちら</span></a></h2>
-    </div>
-  </section>
-</article>
-
+		</article>
  	</main>
 	<footer>
 		<div class="inn">
@@ -37,13 +16,13 @@
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>">TOP</a>
 						</li>
 						<li>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/info/">記事一覧</a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>info/">記事一覧</a>
 						</li>
 						<li>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/diagnostic_referral/">認知機能診断</a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>diagnostic_referral/">認知機能診断紹介</a>
 						</li>
 						<li>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact/">お問い合わせ</a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>basic_knowledge/">認知症の基礎知識</a>
 						</li>
 						<li>
 							<a href="https://www.bellco.co.jp/company" target="_blank">運営会社について</a>
@@ -51,14 +30,11 @@
 						<li>
 							<a href="https://www.bellco.co.jp/policy" target="_blank">プライバシーポリシー</a>
 						</li>
-						<!-- <li>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>">利用規約</a>
-						</li> -->
 					</ul>
 				</div>
 			</div>
 		</div>
-				<small>&copy; 2024  認知症サポート All Rights Reserved.</small>
+			<small>&copy; 2024  認知症サポート All Rights Reserved.</small>
 	</footer>
 <?php wp_footer(); ?>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
