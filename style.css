@@ -86,6 +86,7 @@ html {
   -webkit-tap-highlight-color: transparent; /* 3*/
   scroll-behavior: smooth;
   word-break: break-all;
+  scroll-padding-top: 130px;
 }
 body {
   background-color: #fffdf8;
@@ -364,9 +365,7 @@ input[type="button"]:hover {
   flex-wrap: wrap;
 }
 .tab_label {
-  /* color: #13c3ac; */
   font-weight: bold;
-  /* border: solid 2px #13c3ac; */
   position: relative;
   z-index: 1;
   cursor: pointer;
@@ -375,8 +374,10 @@ input[type="button"]:hover {
   margin: 0 1% 40px 0;
   text-align: center;
   border-radius: 10px;
+  color: #fff;
+  background-color: #bebebe;
 }
-label.tab_label.all {
+/* label.tab_label.all {
   color: #0980b6;
   border: solid 1px #0980b6;
 }
@@ -399,7 +400,7 @@ label.tab_label.interview {
 label.tab_label.news {
   color: #707070;
   border: solid 1px #707070;
-}
+} */
 
 .tab_label:last-of-type {
   margin-right: 0;
@@ -421,6 +422,18 @@ input[name="tab_switch"] {
   display: none;
 }
 
+.tabs input:checked + label.tab_label::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: scaleX(0.5) translateX(-110%) rotate(-45deg);
+  border: 10px solid transparent;
+  border-radius: 0 0 0 5px;
+  bottom: -10px;
+  border-bottom-color: #0980b6;
+  border-left-color: #0980b6;
+  z-index: 2;
+}
 .tabs input:checked + label.tab_label.all {
   color: #fff;
   background-color: #0980b6;
@@ -433,9 +446,17 @@ input[name="tab_switch"] {
   color: #fff;
   background-color: #02bc72;
 }
+.tabs input:checked + label.tab_label.dementia_prevention::before {
+  border-bottom-color: #02bc72;
+  border-left-color: #02bc72;
+}
 .tabs input:checked + label.tab_label.for_dementia_caregivers {
   color: #fff;
   background-color: #884000;
+}
+.tabs input:checked + label.tab_label.for_dementia_caregivers::before {
+  border-bottom-color: #884000;
+  border-left-color: #884000;
 }
 .tabs input:checked + label.tab_label.interview {
   color: #fff;
@@ -1446,8 +1467,6 @@ img {
 }
 /*CSS　フェードイン＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
 
-.more a {
-}
 .bg_bk .more a {
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -4055,7 +4074,7 @@ section.post_view_area ul li img {
   aspect-ratio: 16 / 9 !important;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 section.post_view_area .more {
   background-color: #ebebeb;
@@ -4144,8 +4163,6 @@ section.post_view_area ul li:nth-child(15):before {
   display: block;
 }
 
-section.post_view_area {
-}
 .page-template-page-postviews_list section.post_view_area ul li {
   margin-bottom: 24px;
 }
@@ -4423,6 +4440,7 @@ article.page.info_detail img {
   border-left: 2px solid #35cc63;
   padding-left: 10px;
   margin-bottom: 10px;
+  margin-top: 50px;
 }
 .search span.list_arrow {
   background-color: #0980b6;
@@ -7127,6 +7145,7 @@ display:none;
   }
 }
 
+/* デフォルトのスタイル（PC表示用） */
 .contact02 .form__table {
   width: 100%;
   border-collapse: collapse;
@@ -7322,6 +7341,7 @@ display:none;
 }
 .app_box .app_box_wrapper .app_detail .app_detail_txt {
   font-weight: 500;
+  text-align: center;
   margin: 0 0 min(1vw, 32px);
   white-space: nowrap;
   overflow: visible;
@@ -7399,4 +7419,250 @@ display:none;
 .types_link {
   color: #41c3de;
   border-bottom: 1px solid;
+}
+
+/* 読まれている記事一覧 */
+section.post_view_area {
+  padding-bottom: 80px;
+}
+@media only screen and (max-width: 780px) {
+  section.post_view_area {
+    padding-bottom: 40px;
+  }
+}
+
+/* 251110追加 トップページ */
+img {
+  max-width: 100%;
+}
+section.about_diagnostic {
+  background-color: #caebf4;
+}
+section.about_diagnostic h2 {
+  background-color: #41c3de;
+}
+section.about_gymnastics {
+  background-color: #fde2ea;
+}
+section.about_gymnastics h2 {
+  background-color: #de4186;
+}
+.tab_label {
+  padding: 15px 0;
+}
+.about_contents {
+  background-color: #eefcff;
+  margin-top: 62px;
+}
+.about_contents .inn {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 80px;
+  position: relative;
+}
+.about_contents .inn .about_contents_title_image {
+  position: absolute;
+  top: -9%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 19.4%;
+}
+.about_contents .inn ul li {
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+}
+.about_contents .inn ul li:not(:last-child) {
+  margin-bottom: 88px;
+}
+.about_contents .inn ul li h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #41c3de;
+  padding-bottom: 42px;
+  margin-bottom: 32px;
+  border-bottom: dotted;
+}
+.about_contents .inn ul li h2 span {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+}
+.about_contents .inn ul li.about_dementia h2 span:before {
+  content: "";
+  display: inline-block;
+  background: url(img/icon_book.png) no-repeat center center / contain;
+  width: 80px;
+  height: 80px;
+}
+.about_contents .inn ul li.about_check h2 span:before {
+  content: "";
+  display: inline-block;
+  background: url(img/icon_hatena.png) no-repeat center center / contain;
+  width: 80px;
+  height: 80px;
+}
+.about_contents .inn ul li.about_gymnastics h2 span:before {
+  content: "";
+  display: inline-block;
+  background: url(img/icon_gymnastics.png) no-repeat center center / contain;
+  width: 80px;
+  height: 80px;
+}
+.about_contents .inn ul li p {
+  padding-bottom: 24px;
+}
+.about_contents .inn ul li p:last-of-type {
+  padding-bottom: 0;
+}
+.about_contents .inn ul li .btn_about_contents {
+  margin-top: 40px;
+}
+.about_contents .inn ul li .btn_about_contents .more a {
+  font-size: 14px;
+  display: block;
+  margin: unset;
+  width: 60%;
+  text-align: center;
+  padding: 13px 0;
+  border: 1px solid #0980b6;
+  border-radius: 40px;
+  font-weight: normal;
+  color: #0980b6;
+  position: relative;
+  overflow: hidden;
+  transition: 0.6s;
+  line-height: 14px;
+}
+.about_contents .inn ul li .btn_about_contents .more a:hover {
+  background-color: #0980b6;
+  color: #fff;
+  border: 1px solid;
+}
+.about_contents_image {
+  position: relative;
+  width: 76%;
+}
+.about_contents_image div:first-child {
+  max-width: 480px;
+}
+.about_contents_image div:last-child {
+  max-width: 240px;
+  width: 50%;
+  position: absolute;
+}
+.about_contents_text {
+  max-width: 472px;
+}
+.about_check {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.icon_about_dementia {
+  bottom: -3%;
+  left: 5%;
+}
+.icon_about_check {
+  bottom: -11%;
+  right: 4%;
+}
+.icon_about_gymnastics {
+  bottom: 12%;
+  left: -3%;
+}
+@media only screen and (max-width: 980px) {
+  section.about_area .row_bx_under img {
+    height: 240px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  section.about_diagnostic .row_bx .bx {
+    flex-direction: column-reverse;
+  }
+  section.about_diagnostic .row_bx .bx .row_bx_under:first-child {
+    margin-bottom: 0;
+  }
+  section.about_diagnostic .row_bx .bx .row_bx_under:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  .tab_content {
+    padding-top: 20px;
+  }
+  .tab_label {
+    flex: 10%;
+    line-height: 1.4;
+  }
+  .tab_label.about_prevention,
+  .tab_label.for_dementia_caregivers {
+    padding: 7px 0 !important;
+  }
+  .tabs input:checked + label.tab_label::before {
+    border: 8px solid transparent;
+    border-radius: 0 0 0 5px;
+    bottom: -7px;
+    border-bottom-color: #0980b6;
+    border-left-color: #0980b6;
+  }
+  .about_contents .inn {
+    padding: 16px 24px 40px;
+  }
+  .about_contents .inn .about_contents_title_image {
+    top: -4.3%;
+    width: 36%;
+  }
+  .about_contents .inn ul li {
+    flex-wrap: wrap;
+  }
+  .about_contents .inn ul li:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  .about_contents .inn ul li h2 {
+    font-size: 22px;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+  }
+  .about_contents .inn ul li h2 span {
+    gap: 16px;
+  }
+  .about_contents .inn ul li h2 span:before {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .about_contents .inn ul li p {
+    font-size: 14px;
+  }
+  .about_contents .inn ul li .btn_about_contents .more a {
+    font-size: 12px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about_contents_image {
+    width: 100%;
+  }
+  .about_contents .inn ul li p {
+    padding-bottom: 16px;
+  }
+  .about_contents .inn ul li p:first-child {
+    padding-bottom: 40px;
+  }
+  .about_contents_image div:last-child {
+    width: 44%;
+  }
+  .about_contents .inn ul li.about_dementia p:first-of-type {
+    padding-top: 40px;
+  }
+  .about_contents .inn ul li.about_check p:first-of-type {
+    padding-top: 32px;
+  }
+  .about_contents .inn ul li.about_gymnastics p:first-of-type {
+    padding-top: 33px;
+  }
+  .icon_about_dementia {
+    bottom: -10%;
+    left: 10%;
+  }
+  .icon_about_gymnastics {
+    bottom: -10%;
+    left: 10%;
+  }
 }
