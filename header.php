@@ -10,7 +10,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
-<meta name="description" content="<?php echo trim(wp_title('', false)); if(wp_title('', false)) { echo ' - '; } bloginfo('description'); ?>">
+<?php
+  $description = '';
+
+  if (is_page('basic_knowledge')) {
+    $description = '認知症の初期症状・種類・原因を徹底解説。アルツハイマー型など4タイプの特徴、もの忘れとの違い、予防方法までわかりやすく網羅。「最近物忘れが多い」「家族の様子がおかしい」と感じたらまず読むべき基礎知識。';
+
+  } elseif (is_page('diagnostic_referral')) {
+    $description = '認知機能チェックが無料でできるアプリを紹介。スマホで簡単セルフチェック。もの忘れが気になる方、ご家族の変化を感じた方へ。医師監修で安心。認知症の早期発見・予防の第一歩を今日から始めましょう。';
+
+  } elseif (is_page('gymnastics_introduction')) {
+    $description = '認知症予防体操を動画で紹介。頭と体を同時に使う運動で脳を活性化。自宅で簡単にできる3つの基本動作を専門家が監修。シニアの健康づくり・介護予防に最適。楽しみながら毎日続けられるベルコ体操。';
+
+  } else {
+    $description = trim(wp_title('', false));
+    if ($description) $description .= ' - ';
+    $description .= get_bloginfo('description');
+  }
+?>
+<meta name="description" content="<?php echo esc_attr($description); ?>">
 <title><?php global $page, $paged;
   wp_title( '|', true, 'right' );
 	bloginfo( 'name' );
