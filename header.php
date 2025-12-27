@@ -22,6 +22,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   } elseif (is_page('gymnastics_introduction')) {
     $description = '認知症予防体操を動画で紹介。頭と体を同時に使う運動で脳を活性化。自宅で簡単にできる3つの基本動作を専門家が監修。シニアの健康づくり・介護予防に最適。楽しみながら毎日続けられるベルコ体操。';
 
+  } elseif (is_singular('info')) {
+    if (function_exists('aioseo')) {
+        $description = aioseo()->meta->description->getPostDescription(get_queried_object());
+    }
+    if (empty($description)) {
+        $description = trim(wp_title('', false)) . ' - ' . get_bloginfo('description');
+    }
+
   } else {
     $description = trim(wp_title('', false));
     if ($description) $description .= ' - ';
