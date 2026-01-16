@@ -52,9 +52,6 @@ h3.heading,
   line-height: 1.7;
   order: -1;
 }
-.info_detail p {
-  margin-bottom: 0 !important;
-}
 @media only screen and (max-width: 1366px) {
   .breadcrumbs {
     max-width: 95%;
@@ -460,4 +457,11 @@ h3.heading,
 }
 #toc_container p.toc_title + ul.toc_list {
   margin-top: unset;
+}
+
+.info_detail p {
+  margin-bottom: 0;
+}
+.info_detail .text_box p:not(:last-child) {
+  margin-bottom: 30px;
 }

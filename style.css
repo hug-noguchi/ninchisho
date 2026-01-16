@@ -4615,6 +4615,9 @@ article.page.info_detail img {
 .info_detail .table_box th.th03 {
   width: 30%;
 }
+.info_detail .table_box_note {
+  margin: 30px 0 0;
+}
 .info_detail .t_left th,
 .info_detail .t_left td {
   text-align: left;
