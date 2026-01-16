@@ -4549,6 +4549,12 @@ article.page.info_detail img {
   color: #aaa8a1;
   padding-top: 40px;
 }
+.single-info .detail_dontent .references p {
+  line-height: 20px;
+}
+.single-info .detail_dontent .references p:not(:last-child) {
+  margin-bottom: 10px;
+}
 .single-info .detail_dontent .references a {
   font-weight: normal;
 }
