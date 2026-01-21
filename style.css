@@ -3571,7 +3571,9 @@ article.page.contact + section.pege_sec {
   margin: 40px auto 0 auto;
 }
 .card-box .card:hover {
-  box-shadow: 0 0 20px rgb(255 255 255 / 50%), 0 2px 5px rgb(0 0 0 / 30%);
+  box-shadow:
+    0 0 20px rgb(255 255 255 / 50%),
+    0 2px 5px rgb(0 0 0 / 30%);
 }
 
 .page-template-page-contact section.pege_sec.ft_contact {
@@ -4623,6 +4625,18 @@ article.page.info_detail img {
 }
 .info_detail .table_box_note {
   margin: 30px 0 0;
+}
+.info_detail .table_box .w15 {
+  width: 15%;
+}
+.info_detail .table_box .w20 {
+  width: 20%;
+}
+.info_detail .table_box .vertical-m {
+  vertical-align: middle;
+}
+.info_detail .table_box .text-l {
+  text-align: left;
 }
 .info_detail .t_left th,
 .info_detail .t_left td {
