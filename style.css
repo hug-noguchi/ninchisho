@@ -4632,10 +4632,13 @@ article.page.info_detail img {
 .info_detail .table_box .w20 {
   width: 20%;
 }
-.info_detail .table_box .vertical-m {
+.info_detail .table_box .w30 {
+  width: 30%;
+}
+.info_detail .vertical-m {
   vertical-align: middle;
 }
-.info_detail .table_box .text-l {
+.info_detail .text-l {
   text-align: left;
 }
 .info_detail .t_left th,
