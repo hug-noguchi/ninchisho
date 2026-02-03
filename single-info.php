@@ -65,6 +65,17 @@ get_header(); ?>
     </div>
   </div>
 
+  <div class="diagnosis_link">
+    <div class="inn02">
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>diagnostic_referral/">
+        <picture>
+          <source media="(max-width: 780px)" srcset="<?php echo get_template_directory_uri(); ?>/img/diagnosis_link_sp.png">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis_link_pc.png" alt="認知機能チェックはこちら" width="800" height="168">
+        </picture>
+      </a>
+    </div>
+  </div>
+
   <div class="info_app">
     <div class="pc">
       <div class="sec_inner">
@@ -121,17 +132,6 @@ get_header(); ?>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div class="diagnosis_link">
-    <div class="inn02">
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>diagnostic_referral/">
-        <picture>
-          <source media="(max-width: 780px)" srcset="<?php echo get_template_directory_uri(); ?>/img/diagnosis_link_sp.png">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/diagnosis_link_pc.png" alt="認知機能チェックはこちら" width="800" height="168">
-        </picture>
-      </a>
     </div>
   </div>
 

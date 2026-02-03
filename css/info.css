@@ -465,3 +465,18 @@ h3.heading,
 .info_detail .text_box p:not(:last-child):not(:has(img)) {
   margin-bottom: 30px;
 }
+
+@media only screen and (min-width: 781px) {
+  section.info_detail {
+    padding-bottom: 60px;
+  }
+}
+
+.diagnosis_link {
+  margin: 64px auto;
+}
+@media only screen and (max-width: 780px) {
+  .diagnosis_link {
+    margin: 32px auto 0;
+  }
+}
