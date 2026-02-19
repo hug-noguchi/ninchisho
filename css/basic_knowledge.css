@@ -625,6 +625,184 @@ table tr:last-child td {
   text-align: center;
 }
 
+/* あわせて読みたい */
+#moreblog h2 {
+  margin-bottom: 16px;
+}
+#moreblog h2::after {
+  content: none;
+}
+.moreblog_lead {
+  color: #41c3de;
+  text-align: center;
+  margin-bottom: 53px;
+  position: relative;
+}
+.moreblog_lead::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/knowledge/icon_wavyline.svg) no-repeat center center / contain;
+  width: 332px;
+  height: 13px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.moreblog_title_image {
+  width: 15%;
+  position: absolute;
+  top: -30%;
+  left: 0;
+}
+.moreblog_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.info-card-check {
+  background-color: #fff;
+  border: 2px solid #41c3de;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 28px;
+  width: 31%;
+  position: relative;
+}
+.info-card-check-lead {
+  background-color: #fff;
+  border-radius: 3px;
+  color: #41c3de;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 12px;
+  padding-left: 26px;
+  position: absolute;
+  top: -17px;
+  left: 15px;
+}
+.info-card-check-lead span {
+  font-size: 14px;
+  padding-left: 5px;
+  position: relative;
+}
+.info-card-check-lead span::before {
+  background: url(../img/ico_check.svg) no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 4px;
+  left: -16px;
+}
+.info-card-check-title {
+  margin-bottom: 24px;
+}
+.info-card-check-title p {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline;
+  background: linear-gradient(transparent 70%, #fde67c 70%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  line-height: 1.5;
+}
+.info-card-check-excerpt {
+  text-align: left;
+  margin-top: 24px;
+  line-height: 2;
+}
+.info-card-check-more {
+  color: #41c3de;
+  text-align: right;
+  padding-right: 28px;
+  position: relative;
+}
+.info-card-check-more::after {
+  background: url(../img/knowledge/arrow_r_blue.svg) no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+@media only screen and (max-width: 780px) {
+  #moreblog h2 {
+    margin-bottom: 10px;
+  }
+  .moreblog_list {
+    flex-direction: column;
+  }
+  .info-card-check {
+    margin-top: 26px;
+    padding: 28px 30px 20px;
+    width: 100%;
+  }
+  .info-card-check-lead {
+    font-size: 12px;
+    padding-right: 4px;
+    padding-left: 18px;
+    top: -12px;
+    left: 15px;
+  }
+  .info-card-check-lead span {
+    font-size: 12px;
+    padding-left: 5px;
+  }
+  .info-card-check-lead span::before {
+    width: 14px;
+    height: 14px;
+    top: 2px;
+    left: -13px;
+  }
+  .info-card-check-title {
+    margin-bottom: 16px;
+  }
+  .moreblog_lead {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .moreblog_lead::before {
+    width: 268px;
+    height: 9px;
+    bottom: -14px;
+  }
+  .moreblog_title_image {
+    width: 24%;
+    margin: 0 auto;
+    position: initial;
+    text-align: center;
+  }
+  .info-card-check {
+    margin-top: 30px;
+    padding: 28px 24px 20px;
+  }
+  .info-card-check-title p {
+    font-size: 16px;
+  }
+  .info-card-check-excerpt {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+  }
+  .info-card-check-more {
+    padding-right: 22px;
+  }
+  .info-card-check-more::after {
+    width: 16px;
+    height: 16px;
+    top: 3px;
+  }
+}
+
 .knowledge_notes {
   background: #eefcff url("../img/knowledge/bg_knowledge_notes.png") no-repeat center top;
   background-size: cover;
@@ -678,7 +856,9 @@ table tr:last-child td {
 .faq__item {
   border-radius: 10px;
   border: 2px solid transparent;
-  background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(#41c3de) border-box;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(#41c3de) border-box;
   overflow: clip;
 }
 .faq__summary {

@@ -595,6 +595,115 @@ get_header(); ?>
       </div>
     </div>
   </section>
+  <section id="moreblog">
+    <div class="sec_inner">
+      <div class="sec_title">
+        <h2><span>あわせて読みたい</span></h2>
+        <p class="moreblog_lead">気になるポイントをもう少し詳しく</p>
+        <div class="moreblog_title_image">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/knowledge/moreblog.png" alt="イメージ画像">
+        </div>
+      </div>
+      <ul class="moreblog_list">
+        <li class="info-card-check">
+          <a href="/ninchisho/info/73/">
+            <p class="info-card-check-lead"><span>CHECK</span></p>
+            <div class="info-card-check-content">
+              <div class="info-card-check-title">
+                <p>認知症ともの忘れを<br class="pc">見分ける方法とは？</p>
+              </div>
+              <picture class="info-card-check-thumbnail">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/knowledge/moreblog01.png" media="(min-width: 768px)" type="image/png">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/knowledge/moreblog01_sp.png" alt=認知症ともの忘れを見分ける方法とは？ width="288" height="192">
+              </picture>
+              <p class="info-card-check-excerpt">加齢によるもの忘れと認知症の違いを、具体例を交えてわかりやすく解説します。</p>
+              <p class="info-card-check-more"><span>この記事を読む</span></p>
+            </div>
+          </a>
+        </li>
+        <li class="info-card-check">
+          <a href="/ninchisho/info/504/">
+            <p class="info-card-check-lead"><span>CHECK</span></p>
+            <div class="info-card-check-content">
+              <div class="info-card-check-title">
+                <p>認知症の6つの<br class="pc">初期症状とは？</p>
+              </div>
+              <picture class="info-card-check-thumbnail">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/knowledge/moreblog02.png" media="(min-width: 768px)" type="image/png">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/knowledge/moreblog02_sp.png" alt=認知症の6つの初期症状とは？ width="288" height="192">
+              </picture>
+              <p class="info-card-check-excerpt">早い段階で見られやすい変化や、気づきのポイントをまとめています。</p>
+              <p class="info-card-check-more"><span>この記事を読む</span></p>
+            </div>
+          </a>
+        </li>
+        <li class="info-card-check">
+          <a href="/ninchisho/info/635/">
+            <p class="info-card-check-lead"><span>CHECK</span></p>
+            <div class="info-card-check-content">
+              <div class="info-card-check-title">
+                <p>認知症と間違えやすい<br class="pc">病気とは？</p>
+              </div>
+              <picture class="info-card-check-thumbnail">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/knowledge/moreblog03.png" media="(min-width: 768px)" type="image/png">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/knowledge/moreblog03_sp.png" alt=認知症と間違えやすい病気とは？ width="288" height="192">
+              </picture>
+              <p class="info-card-check-excerpt">認知症と似た症状が出る病気や状態について、見分ける視点を紹介します。</p>
+              <p class="info-card-check-more"><span>この記事を読む</span></p>
+            </div>
+          </a>
+        </li>
+        <li class="info-card-check">
+          <a href="/ninchisho/info/130/">
+            <p class="info-card-check-lead"><span>CHECK</span></p>
+            <div class="info-card-check-content">
+              <div class="info-card-check-title">
+                <p>認知症の<br class="pc">4種類の特徴とは？</p>
+              </div>
+              <picture class="info-card-check-thumbnail">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/knowledge/moreblog04.png" media="(min-width: 768px)" type="image/png">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/knowledge/moreblog04_sp.png" alt=認知症の4種類の特徴とは？ width="288" height="192">
+              </picture>
+              <p class="info-card-check-excerpt">認知症の主な種類と、それぞれに見られやすい症状の違いを取り上げます。</p>
+              <p class="info-card-check-more"><span>この記事を読む</span></p>
+            </div>
+          </a>
+        </li>
+        <li class="info-card-check">
+          <a href="/ninchisho/info/621/">
+            <p class="info-card-check-lead"><span>CHECK</span></p>
+            <div class="info-card-check-content">
+              <div class="info-card-check-title">
+                <p>認知症の「初期・<br class="pc">中期・後期」とは？</p>
+              </div>
+              <picture class="info-card-check-thumbnail">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/knowledge/moreblog05.png" media="(min-width: 768px)" type="image/png">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/knowledge/moreblog05_sp.png" alt=認知症の「初期・中期・後期」とは？ width="288" height="192">
+              </picture>
+              <p class="info-card-check-excerpt">認知症の進行にともなう変化を、初期・中期・後期の段階ごとに整理します。</p>
+              <p class="info-card-check-more"><span>この記事を読む</span></p>
+            </div>
+          </a>
+        </li>
+        <li class="info-card-check">
+          <a href="/ninchisho/info/105/">
+            <p class="info-card-check-lead"><span>CHECK</span></p>
+            <div class="info-card-check-content">
+              <div class="info-card-check-title">
+                <p>認知症テストの<br class="pc">種類2つ！</p>
+              </div>
+              <picture class="info-card-check-thumbnail">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/img/knowledge/moreblog06.png" media="(min-width: 768px)" type="image/png">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/knowledge/moreblog06_sp.png" alt=認知症テストの種類2つ！ width="288" height="192">
+              </picture>
+              <p class="info-card-check-excerpt">認知機能チェックや検査にはどんな種類があるのか、分かりやすくまとめます。</p>
+              <p class="info-card-check-more"><span>この記事を読む</span></p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
   <div class="knowledge_notes">
     <div class="knowledge_notes_inner">
       <p>
