@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_682" data-name="長方形 682" width="24" height="24" transform="translate(-2238 -3296)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#63c1ff"/>
+      <stop offset="0.565" stop-color="#82ec7a"/>
+      <stop offset="1" stop-color="#ffd980"/>
+    </linearGradient>
+  </defs>
+  <g id="マスクグループ_3" data-name="マスクグループ 3" transform="translate(2238 3296)" clip-path="url(#clip-path)">
+    <rect id="長方形_683" data-name="長方形 683" width="24" height="24" transform="translate(-2238 -3296)" fill="#fff"/>
+    <g id="コンポーネント_8_8" data-name="コンポーネント 8 – 8" transform="translate(-2241.364 -3300.792)">
+      <path id="パス_968" data-name="パス 968" d="M274.195-2862.779c-2.34,7.177-5.65,15.557-22.969,20.862.312.156-.156,9.206,0,9.05,18.256-6.241,26.213-13.685,31.362-29.912C282.588-2862.936,274.039-2862.779,274.195-2862.779Z" transform="translate(-251.193 2864.865)" fill="url(#linear-gradient)"/>
+      <text id="認" transform="translate(5.364 25)" fill="#013b7d" font-size="20" font-family="PShinMGoPr6N-Bold, A P-OTF Shin Maru Go Pr6N" font-weight="700" letter-spacing="-0.01em"><tspan x="0" y="0">認</tspan></text>
+    </g>
+  </g>
+</svg>
