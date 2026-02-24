@@ -389,4 +389,26 @@ function change_post_tag_to_checkbox() {
 }
 add_action( 'init', 'change_post_tag_to_checkbox', 1 );
 
+// 記事内 カード型リンク「認知症の基礎知識」
+function info_card_knowledge_func() {
+  return '<div class="info-card info-card-knowledge">
+            <a href="/ninchisho/basic_knowledge/">
+              <p class="info-card-lead"><span>認知症の基礎知識</span></p>
+              <figure class="info-card-thumbnail">
+                <img src="https://www.bellco.co.jp/ninchisho/uBs8nV5c/wordpress/wp-content/themes/ninchisho/img/info-card-knowledge.png" alt="認知症の基礎知識" width="144" height="96">
+              </figure>
+              <div class="info-card-content">
+                <p class="info-card-title">認知症の基礎知識</p>
+                <p class="info-card-excerpt info-card-knowledge_pc">
+                  <span class="sub-lead">はじめての方にもわかりやすく</span><br>
+                  認知症の症状や原因、予防の考え方など、基本的なポイントをやさしい言葉でまとめています。
+                </p>
+                <p class="info-card-excerpt info-card-knowledge_sp">
+                  はじめての方にもわかりやすく、基本的なポイントをまとめています。
+                </p>
+              </div>
+            </a>
+          </div>';
+}
+add_shortcode('info-card-knowledge', 'info_card_knowledge_func');
 ?>
