@@ -7700,3 +7700,12 @@ section.about_gymnastics h2 {
     left: 10%;
   }
 }
+
+/* 記事内 無料ダウンロードボタン */
+.single-info .detail_dontent .pdf-dl a {
+  color: #0980b6 !important;
+}
+
+.single-info .detail_dontent .pdf-dl a:hover {
+  color: #fff !important;
+}
