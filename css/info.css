@@ -527,3 +527,63 @@ h3.heading,
     display: block;
   }
 }
+
+/* カード型リンク「今後の暮らしを考え始めた方へ」 */
+.info-card-anata {
+  background-color: #fbf6f7;
+  border: 1px solid #ed6b87;
+}
+.info-card-anata .info-card-lead {
+  color: #ed6b87;
+  background-color: #fbf6f7;
+}
+.info-card-anata .info-card-lead span::before {
+  background: url(../img/ico_check_pink.svg) no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 4px;
+  left: -16px;
+}
+.info-card-anata .info-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  display: inline;
+  background: linear-gradient(transparent 70%, #fde67c 70%);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.info-card-anata .info-card-excerpt {
+  line-height: 1.6;
+}
+.info-card-anata .info-card-excerpt .sub-lead {
+  font-weight: bold;
+}
+@media only screen and (min-width: 781px) {
+  .info-card-anata .info-card-excerpt.info-card-anata_sp {
+    display: none;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .info-card-anata .info-card-lead {
+    font-size: 12px;
+  }
+  .info-card-anata .info-card-title {
+    font-size: 15px;
+    margin-bottom: 4px !important;
+  }
+  .info-card-anata .info-card-excerpt {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .info-card-anata .info-card-excerpt.info-card-anata_pc {
+    display: none;
+  }
+  .info-card-anata .info-card-excerpt {
+    display: block;
+  }
+}
