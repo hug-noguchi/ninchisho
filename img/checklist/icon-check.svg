@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="グループ_16067" data-name="グループ 16067" transform="translate(-80 -8474)">
+    <ellipse id="楕円形_43" data-name="楕円形 43" cx="14" cy="14" rx="14" ry="14" transform="translate(80 8474)" fill="#eefcff"/>
+    <g id="check-lg" transform="translate(87.497 8483.359)">
+      <g id="グループ_1846" data-name="グループ 1846" transform="translate(0 0)">
+        <path id="パス_10016" data-name="パス 10016" d="M48.2,45.261a.956.956,0,0,1,1.311,0,.859.859,0,0,1,.013,1.243l-7.406,8.274a.955.955,0,0,1-1.334.024l-4.506-4.316a.861.861,0,0,1,0-1.255.956.956,0,0,1,1.311,0l3.822,3.661,6.763-7.605A.3.3,0,0,1,48.2,45.261Z" transform="translate(-36.006 -45.001)" fill="#41c3de"/>
+      </g>
+    </g>
+  </g>
+</svg>
