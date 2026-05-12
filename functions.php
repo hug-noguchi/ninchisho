@@ -391,7 +391,7 @@ add_action( 'init', 'change_post_tag_to_checkbox', 1 );
 
 // 記事内 カード型リンク「認知症の基礎知識」
 function info_card_knowledge_func() {
-  return '<div class="info-card info-card-knowledge">
+  return '<div class="info-card info-card-blue">
             <a href="/ninchisho/basic_knowledge/">
               <p class="info-card-lead"><span>認知症を詳しく知りたい方に</span></p>
               <figure class="info-card-thumbnail">
@@ -399,11 +399,11 @@ function info_card_knowledge_func() {
               </figure>
               <div class="info-card-content">
                 <p class="info-card-title">認知症の基礎知識</p>
-                <p class="info-card-excerpt info-card-knowledge_pc">
+                <p class="info-card-excerpt info-card-blue_pc">
                   <span class="sub-lead">はじめての方にもわかりやすく</span><br>
                   認知症の症状や原因、予防の考え方など、基本的なポイントをやさしい言葉でまとめています。
                 </p>
-                <p class="info-card-excerpt info-card-knowledge_sp">
+                <p class="info-card-excerpt info-card-blue_sp">
                   はじめての方にもわかりやすく、基本的なポイントをまとめています。
                 </p>
               </div>
@@ -414,7 +414,7 @@ add_shortcode('info-card-knowledge', 'info_card_knowledge_func');
 
 /* 記事内 カード型リンク「今後の暮らしを考え始めた方へ」 */
 function info_card_anata_func() {
-  return '<div class="info-card info-card-anata">
+  return '<div class="info-card info-card-pink">
             <a href="/anatarasiku/?utm_source=bellco.co.jp&utm_medium=ninchisho&utm_campaign=ninchisho_article" target="_blank">
               <p class="info-card-lead"><span>今後の暮らしを考え始めた方へ</span></p>
               <figure class="info-card-thumbnail">
@@ -422,11 +422,11 @@ function info_card_anata_func() {
               </figure>
               <div class="info-card-content">
                 <p class="info-card-title">老人ホーム選びの無料サポート<br class="sp">「あなたらしく」</p>
-                <p class="info-card-excerpt info-card-anata_pc">
+                <p class="info-card-excerpt info-card-pink_pc">
                   <span class="sub-lead">何から始めるか迷ったときに</span><br>
                   老人ホームや高齢者施設の種類・費用・選び方など、気になることからプロの相談員に無料でご相談いただけます。ご家族だけでのご相談も歓迎です。
                 </p>
-                <p class="info-card-excerpt info-card-anata_sp">
+                <p class="info-card-excerpt info-card-pink_sp">
                   何から始めるか迷ったら、プロの相談員に無料でご相談いただけます。
                 </p>
               </div>
@@ -435,4 +435,26 @@ function info_card_anata_func() {
 }
 add_shortcode('info-card-anata', 'info_card_anata_func');
 
+// 記事内 カード型リンク「認知症の初期症状が気になる方に」
+function info_card_checklist_func() {
+  return '<div class="info-card info-card-blue">
+            <a href="/ninchisho/checklist/">
+              <p class="info-card-lead"><span>認知症の初期症状が気になる方に</span></p>
+              <figure class="info-card-thumbnail">
+                <img src="https://www.bellco.co.jp/ninchisho/uBs8nV5c/wordpress/wp-content/themes/ninchisho/img/info-card-checklist.png" alt="認知症の基礎知識" width="144" height="96">
+              </figure>
+              <div class="info-card-content">
+                <p class="info-card-title">初期症状チェックリスト</p>
+                <p class="info-card-excerpt info-card-blue_pc">
+                  <span class="sub-lead">15項目で今の状態を確認</span><br>
+                  チェックリストは、ご本人だけでなくご家族や身近な方の様子を確認する際にも活用できます。
+                </p>
+                <p class="info-card-excerpt info-card-blue_sp">
+                  15項目のチェックリストで今の状態を確認する際にも活用できます。
+                </p>
+              </div>
+            </a>
+          </div>';
+}
+add_shortcode('info-card-checklist', 'info_card_checklist_func');
 ?>
