@@ -1,0 +1,1275 @@
+@charset "utf-8";
+
+main {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.breadcrumbs {
+  margin: 8px auto 0;
+}
+
+.breadcrumbs span {
+  color: #515151;
+}
+
+section.kv_area {
+  padding-top: 0;
+}
+
+span.page_ttl {
+  top: 25%;
+  line-height: 1.1;
+}
+
+span.page_ttl.js_typing::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/checklist/kv_icon.png) no-repeat center center / contain;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -520%;
+  left: 46%;
+}
+
+span.page_ttl span {
+  font-size: 24px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.sec_inner {
+  margin: 0 auto;
+  max-width: 1150px;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #41c3de;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 72px;
+  position: relative;
+  line-height: 1.4;
+}
+
+h2::after {
+  position: absolute;
+  content: "";
+  background-color: #41c3de;
+  border-radius: 20px;
+  width: 72px;
+  height: 6px;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.sec_title {
+  position: relative;
+}
+
+.foot_bnr_area {
+  display: none;
+}
+
+.checklist_box {
+  content: "";
+  background: url(../img/checklist/bg_knowledge_lead.png) no-repeat center center / contain;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 80px;
+  position: relative;
+}
+
+.checklist_lead {
+  width: 68%;
+}
+
+.checklist_lead_main,
+.checklist_lead_main + p {
+  margin-bottom: 32px;
+}
+
+.checklist_lead p span,
+.checklist_lead_main p {
+  font-weight: 700;
+}
+
+.checklist_lead_main p + p {
+  margin-top: 8px;
+}
+
+.checklist_image {
+  width: 24%;
+}
+
+/* 認知症の初期症状チェックリスト */
+.check {
+  padding-bottom: 80px;
+}
+
+.check_lead_txt {
+  margin-bottom: 76px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 780px) {
+  .check {
+    padding-bottom: 30px;
+  }
+
+  .check_lead_txt {
+    margin-bottom: 24px;
+  }
+}
+
+.blue_dot_box {
+  background-color: #fff;
+  border: 3px dotted #41c3de;
+  border-radius: 20px;
+  padding: 80px 64px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 48px;
+  background: linear-gradient(transparent 70%, #fde67c 70%);
+  display: inline-block;
+}
+
+/* 本人のチェックリスト */
+.check_item h3 {
+  position: relative;
+}
+
+.check_item h3::before {
+  background: url(../img/checklist/ill01.svg) no-repeat center / contain;
+  content: "";
+  width: 104px;
+  height: 170px;
+  position: absolute;
+  top: -110px;
+  left: -60%;
+}
+
+.check_item_lead {
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.check_section {
+  padding: 0;
+}
+
+.check_section + .check_section {
+  margin-top: 56px;
+}
+
+.check_section h4 {
+  background-color: #41c3de;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 13px 24px 14px;
+  text-align: left;
+  position: relative;
+}
+
+.check_section h4::before {
+  background: url(../img/checklist/icon-check.svg) no-repeat center center / contain;
+  content: "";
+  width: 28px;
+  height: 28px;
+}
+
+.check_section_point {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 16px;
+}
+
+.check_section_point p:first-child {
+  background-color: #fcd214;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 700;
+  width: 72px;
+  height: 72px;
+}
+
+.check_section_point p:last-child {
+  text-align: left;
+}
+
+.check_item_list li + li {
+  margin-top: 12px;
+}
+
+.check_item_list label {
+  background-color: #eefcff;
+  border: 1px solid #41c3de;
+  border-radius: 10px;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 40px 20px 100px;
+  text-align: left;
+  position: relative;
+  width: 100%;
+}
+
+.check_item_list label:hover {
+  cursor: pointer;
+  outline: 3px solid #41c3de;
+}
+
+.check_item_list label::before {
+  background-color: #fff;
+  border: 2px solid #a5a5a5;
+  border-radius: 8px;
+  content: "";
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 17px;
+  left: 35px;
+}
+
+.check_item_list label::after {
+  border-right: 5px solid #ff6161;
+  border-bottom: 5px solid #ff6161;
+  content: "";
+  width: 15px;
+  height: 22px;
+  position: absolute;
+  top: 21px;
+  left: 46px;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  transform: translateX(-50%);
+}
+
+input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 780px) {
+  .check_item h3 {
+    margin-bottom: 132px;
+  }
+
+  .check_item h3::before {
+    width: 61px;
+    height: 100px;
+    top: initial;
+    bottom: -115px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .check_item_lead {
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  .check_section + .check_section {
+    margin-top: 32px;
+  }
+
+  .check_section h4 {
+    font-size: 16px;
+    padding: 8px 16px 10px;
+  }
+
+  .check_section h4::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .check_section_point {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 0 20px;
+  }
+
+  .check_section_point p:first-child {
+    border-radius: 6px;
+    font-size: 12px;
+    width: 72px;
+    height: 20px;
+  }
+
+  .check_item_list li + li {
+    margin-top: 10px;
+  }
+
+  .check_item_list label {
+    font-size: 14px;
+    gap: 16px;
+    padding: 16px 16px 16px 56px;
+  }
+
+  .check_item_list label::before {
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+  }
+
+  .check_item_list label::after {
+    border-right: 4px solid #ff6161;
+    border-bottom: 4px solid #ff6161;
+    width: 10px;
+    height: 16px;
+    top: 47%;
+    left: 23px;
+    transform: translateY(-50%) rotate(45deg);
+  }
+}
+
+/* 家族が気づきやすい変化 */
+.change h3 {
+  position: relative;
+}
+
+.change h3::before {
+  background: url(../img/checklist/ill02.svg) no-repeat center / contain;
+  content: "";
+  width: 116px;
+  height: 170px;
+  position: absolute;
+  top: -110px;
+  left: -60%;
+}
+
+.change_lead {
+  text-align: center;
+}
+
+.change .check_section_point {
+  padding-top: 0;
+}
+
+@media only screen and (max-width: 780px) {
+  .change h3 {
+    margin-bottom: 132px;
+  }
+
+  .change h3::before {
+    width: 68px;
+    height: 100px;
+    top: initial;
+    bottom: -115px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .change_lead {
+    text-align: left;
+  }
+
+  .change .check_section {
+    margin-top: 0;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border: 1px solid #41c3de;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+table tr th,
+table tr td {
+  text-align: center;
+  border-bottom: 1px solid #41c3de;
+  padding: 16px 0;
+}
+
+table tr th {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  background-color: #41c3de;
+}
+
+table tr th + th {
+  border-left: 1px solid #fff;
+}
+
+table tr th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+table tr th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+table tr td:not(:last-child) {
+  border-right: 1px solid #41c3de !important;
+}
+
+table tr td {
+  background-color: #eefcff;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+/* チェック結果 */
+.result {
+  background-color: #ffefc8;
+  border-radius: 20px;
+  padding: 64px;
+  position: relative;
+  text-align: center;
+}
+
+.result::before {
+  background: url(../img/checklist/deco_flower01.svg) no-repeat center / contain;
+  content: "";
+  width: 145px;
+  height: 82px;
+  position: absolute;
+  top: 38px;
+  left: 6%;
+  z-index: 2;
+}
+
+.result_lead {
+  margin-bottom: 48px;
+}
+
+.result_table {
+  margin-bottom: 48px;
+}
+
+.result_table th {
+  padding: 16px 48px;
+}
+
+.result_table th:first-child {
+  width: 220px;
+}
+
+.result_table td {
+  padding: 16px 40px;
+}
+
+.result_table td:first-child {
+  color: #41c3de;
+  font-weight: 700;
+}
+
+.result_table td + td {
+  text-align: left;
+}
+
+.result_row {
+  display: flex;
+  gap: 68px;
+}
+
+.result_txt {
+  max-width: 680px;
+  text-align: left;
+}
+
+.result_txt + .result_txt {
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 780px) {
+  .result {
+    padding: 24px;
+  }
+
+  .result::before {
+    width: 101px;
+    height: 56px;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .result_ttl {
+    margin-bottom: 88px;
+  }
+
+  .result_lead {
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  .result_table {
+    margin-bottom: 16px;
+  }
+
+  .result_table th,
+  .result_table td {
+    display: block;
+    padding: 16px;
+    text-align: left;
+    width: 100% !important;
+  }
+
+  .result_table th:first-child {
+    border-radius: 0;
+  }
+
+  .result_table td {
+    border-bottom: none;
+  }
+
+  .result_row {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+
+  .result_image img {
+    width: 113px;
+  }
+}
+
+/* 認知症の初期症状とは */
+.symptoms {
+  background-color: #eefcff;
+}
+
+.symptoms_lead_box {
+  margin-bottom: 56px;
+}
+
+.symptoms_lead_box p + p {
+  margin-top: 1em;
+}
+
+.symptoms_image {
+  text-align: center;
+}
+
+.symptoms_link {
+  color: #41c3de;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 780px) {
+  .symptoms_lead_box {
+    margin-bottom: 24px;
+  }
+
+  .symptoms_image img {
+    width: 243px;
+  }
+}
+
+/* スマートフォンのアプリでできる認知機能チェック */
+.app_lead {
+  margin-bottom: 48px;
+}
+
+.app_lead p + p {
+  margin-top: 1em;
+}
+
+.app_table {
+  margin-bottom: 96px;
+  position: relative;
+}
+
+.app_table::after {
+  background: url(../img/checklist/arrow.svg) no-repeat;
+  background-size: contain;
+  content: "";
+  width: 32px;
+  height: 48px;
+  position: absolute;
+  bottom: -70px;
+  right: 21%;
+}
+
+.app_box {
+  display: grid;
+  column-gap: 76px;
+  text-align: left;
+}
+
+.app_box_image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+}
+
+.app_box_image p {
+  font-size: 14px;
+  margin: 15px auto 0;
+  max-width: 277px;
+}
+
+.app_box_content {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  max-width: 560px;
+}
+
+.app_box_content p + p {
+  margin-top: 1em;
+}
+
+.app_box_dl {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #ffefc8;
+  border-radius: 20px;
+  margin-top: 48px;
+  padding: 40px 45px;
+}
+
+.app_box_dl p {
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.app_box_btns {
+  display: flex;
+  gap: 24px;
+}
+
+@media only screen and (max-width: 780px) {
+  .app_lead {
+    margin-bottom: 24px;
+  }
+
+  .app_table {
+    margin-bottom: 60px;
+  }
+
+  .app_table::after {
+    width: 24px;
+    height: 36px;
+    bottom: -48px;
+    right: 17%;
+  }
+
+  .app_box {
+    gap: 23px;
+  }
+
+  .app_box_image {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .app_box_image p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .app_box_content {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .app_box_dl {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    margin-top: 0;
+    padding: 24px 30px;
+  }
+
+  .app_box_dl p {
+    margin-bottom: 16px;
+  }
+
+  .app_box_btns {
+    gap: 6px;
+  }
+}
+
+.supervisor_new {
+  background-color: #eefcff;
+}
+.supervisor_new .sec_inner {
+  display: flex;
+  gap: 44px;
+}
+.supervisor_new_image {
+  width: 22%;
+}
+.supervisor_new_box h2 {
+  text-align: left;
+  margin-bottom: 40px;
+}
+.supervisor_new_box h2::after {
+  width: 100%;
+  height: 1px;
+  bottom: -16px;
+}
+.supervisor_new_box h2 .supervisor_name {
+  font-size: 37px;
+  color: #707070;
+}
+.supervisor_new_box h2 .supervisor_sub_title {
+  font-size: 26px;
+  color: #707070;
+}
+.supervisor_new_box .supervisor_new_txt {
+  font-size: 14px;
+  display: flex;
+  gap: 64px;
+}
+.supervisor_new_box .career p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.supervisor_new_box .career p .year {
+  padding-right: 1em;
+}
+@media only screen and (max-width: 780px) {
+  .supervisor_new {
+    margin-top: 0 !important;
+    padding: 30px 0;
+  }
+  .supervisor_new_box h2::after {
+    display: none;
+  }
+  .supervisor_new_box .supervisor_new_title {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 26px;
+    position: relative;
+  }
+  .supervisor_new_box .supervisor_new_title::after {
+    position: absolute;
+    content: "";
+    background-color: #41c3de;
+    border-radius: 20px;
+    width: 100%;
+    height: 1px;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .supervisor_new_image {
+    width: 34%;
+  }
+  .supervisor_new_box h2 {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+  .supervisor_new_box h2 .supervisor_name {
+    font-size: 20px;
+  }
+  .supervisor_new_box h2 .supervisor_sub_title {
+    font-size: 14px;
+  }
+  .supervisor_new_box .supervisor_new_txt {
+    font-size: 14px;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .supervisor_new_box .career p {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 6px;
+  }
+  .supervisor_new_box .career p .year {
+    flex: 0 0 4em;
+  }
+  .supervisor_new_box .career p .text {
+    flex: 1;
+  }
+}
+
+.lifestyle_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lifestyle_list li {
+  display: inline-grid;
+  align-items: center;
+  width: 21%;
+}
+
+.lifestyle_list .lifestyle_image {
+  margin-bottom: 24px;
+}
+
+.lifestyle_list li p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.lifestyle_list li p span {
+  font-weight: normal;
+}
+
+.merit {
+  margin-bottom: 0;
+  padding: 64px 142px;
+  position: relative;
+}
+
+.merit_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.merit_list li {
+  width: 49%;
+  background-color: #e3faff;
+  padding: 32px 50px;
+  border-radius: 10px;
+}
+
+.merit_list li .merit_image {
+  margin-bottom: 20px;
+}
+
+.merit_list li p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.info-card-check {
+  background-color: #fff;
+  border: 2px solid #41c3de;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 28px;
+  width: 31%;
+  position: relative;
+}
+
+.info-card-check-lead {
+  background-color: #fff;
+  border-radius: 3px;
+  color: #41c3de;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 12px;
+  padding-left: 26px;
+  position: absolute;
+  top: -17px;
+  left: 15px;
+}
+
+.info-card-check-lead span {
+  font-size: 14px;
+  padding-left: 5px;
+  position: relative;
+}
+
+.info-card-check-lead span::before {
+  background: url(../img/ico_check.svg) no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 4px;
+  left: -16px;
+}
+
+.info-card-check-title {
+  margin-bottom: 24px;
+}
+
+.info-card-check-title p {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline;
+  background: linear-gradient(transparent 70%, #fde67c 70%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  line-height: 1.5;
+}
+
+.info-card-check-excerpt {
+  text-align: left;
+  margin-top: 24px;
+  line-height: 2;
+}
+
+.info-card-check-more {
+  color: #41c3de;
+  text-align: right;
+  padding-right: 28px;
+  position: relative;
+}
+
+.info-card-check-more::after {
+  background: url(../img/knowledge/arrow_r_blue.svg) no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+@media only screen and (max-width: 780px) {
+  .info-card-check {
+    margin-top: 26px;
+    padding: 28px 30px 20px;
+    width: 100%;
+  }
+
+  .info-card-check-lead {
+    font-size: 12px;
+    padding-right: 4px;
+    padding-left: 18px;
+    top: -12px;
+    left: 15px;
+  }
+
+  .info-card-check-lead span {
+    font-size: 12px;
+    padding-left: 5px;
+  }
+
+  .info-card-check-lead span::before {
+    width: 14px;
+    height: 14px;
+    top: 2px;
+    left: -13px;
+  }
+
+  .info-card-check-title {
+    margin-bottom: 16px;
+  }
+
+  .info-card-check {
+    margin-top: 30px;
+    padding: 28px 24px 20px;
+  }
+
+  .info-card-check-title p {
+    font-size: 16px;
+  }
+
+  .info-card-check-excerpt {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+  }
+
+  .info-card-check-more {
+    padding-right: 22px;
+  }
+
+  .info-card-check-more::after {
+    width: 16px;
+    height: 16px;
+    top: 3px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .breadcrumbs {
+    max-width: 95%;
+  }
+
+  span.page_ttl.js_typing::before {
+    width: 130px;
+    height: 130px;
+    top: -230%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+  span.page_ttl span {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .merit_list li {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  article.page .kv_top {
+    max-width: 100%;
+  }
+
+  article.page .kv_top img {
+    aspect-ratio: 2 / 1;
+  }
+
+  .page_ttl {
+    padding-top: 0 !important;
+    top: 15% !important;
+  }
+
+  span.page_ttl.js_typing::before {
+    width: 50px;
+    height: 50px;
+    top: -160%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+  h2 {
+    font-size: 19px;
+    margin-bottom: 44px;
+  }
+
+  h2::after {
+    width: 48px;
+    height: 4px;
+    bottom: -16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  .breadcrumbs {
+    display: block;
+  }
+
+  .breadcrumbs span {
+    font-size: 12px;
+  }
+
+  .breadcrumbs span:first-of-type {
+    letter-spacing: -1px;
+  }
+
+  .sec_inner {
+    padding: 0 20px;
+  }
+
+  .checklist_box {
+    background: #eefcff;
+    border: 3px dotted #41c3de;
+    border-radius: 20px;
+    flex-direction: column-reverse;
+    gap: 24px;
+    padding: 24px;
+    position: relative;
+  }
+
+  .checklist_box::before,
+  .checklist_box::after {
+    background-color: #eefcff;
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  .checklist_box::before {
+    top: -4px;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    width: 55%;
+    margin: auto;
+  }
+
+  .checklist_box::after {
+    top: 0;
+    bottom: 0;
+    left: -3px;
+    right: -3px;
+    width: 102%;
+    height: 80%;
+    margin: auto;
+  }
+
+  .checklist_image {
+    position: relative;
+    z-index: 1;
+    width: 162px;
+  }
+
+  .checklist_lead {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .checklist_lead_main,
+  .checklist_lead_main + p {
+    margin-bottom: 24px;
+  }
+
+  .blue_dot_box {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .change {
+    padding-bottom: 50px;
+  }
+
+  .change_lead_list {
+    flex-direction: column;
+    gap: 4px;
+    padding: 24px 0;
+  }
+
+  .change_lead_list li {
+    font-size: 14px;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .change_lead_box {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  .change_image {
+    width: 52%;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+  .check_item h3 {
+    background: initial;
+  }
+
+  .check_item h3 span {
+    background: linear-gradient(transparent 70%, #fde67c 70%);
+    line-height: 1.55;
+  }
+
+  .nerve_cells {
+    margin-bottom: 75px;
+  }
+
+  .scroll {
+    margin-bottom: 24px;
+    overflow-x: scroll;
+  }
+
+  .scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+  }
+
+  .scroll::-webkit-scrollbar-track {
+    background: #ebebeb;
+  }
+
+  .scroll::-webkit-scrollbar-thumb {
+    background: #41c3de;
+  }
+
+  .symptoms_lead_box p {
+    margin-bottom: 24px;
+  }
+
+  .lifestyle_list {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .lifestyle_list li {
+    display: unset;
+    width: 45%;
+  }
+
+  .lifestyle_list .lifestyle_image {
+    margin-bottom: 8px;
+  }
+
+  .lifestyle_list li p {
+    letter-spacing: -1.8px;
+  }
+
+  .merit {
+    margin-bottom: 0 !important;
+  }
+
+  .merit_list {
+    flex-direction: column;
+  }
+
+  .merit_list li {
+    padding: 24px 36px;
+  }
+
+  .merit_list li .merit_image {
+    margin-bottom: 16px;
+  }
+
+  .merit_list li .merit_image img {
+    width: auto;
+    height: 100px;
+  }
+}
